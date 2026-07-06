@@ -5,55 +5,34 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Sau khi hoàn thành các nội dung về hạ tầng mạng và triển khai máy chủ trên AWS, tuần thứ ba tập trung tìm hiểu các dịch vụ lưu trữ, cơ sở dữ liệu và quản lý quyền truy cập. Nội dung chính bao gồm làm quen với **Amazon S3**, tìm hiểu **Amazon Relational Database Service (Amazon RDS)** và nghiên cứu cơ chế **AWS Identity and Access Management (IAM)** nhằm phục vụ cho việc triển khai và quản lý ứng dụng trên nền tảng AWS.
 
 ### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu dịch vụ lưu trữ đối tượng Amazon S3.
+* Nắm được kiến thức cơ bản về Amazon Relational Database Service (Amazon RDS).
+* Hiểu vai trò của Amazon RDS trong việc quản lý cơ sở dữ liệu trên AWS.
+* Tìm hiểu cơ chế kiểm soát truy cập bằng AWS Identity and Access Management (IAM).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Tìm hiểu tổng quan về dịch vụ **Amazon S3** và các trường hợp sử dụng.<br>- Nghiên cứu khái niệm Bucket, Object và Storage Class.<br>+ Làm quen với giao diện quản lý Amazon S3 trên AWS Console. | 01/05/2026 | 01/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 7** | - Tiếp tục học nội dung **Starting with Amazon S3**.<br>- Tìm hiểu cách tạo Bucket, quản lý tệp và cấu hình quyền truy cập cơ bản.<br>+ Ghi chú các tính năng quan trọng của Amazon S3. | 02/05/2026 | 02/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Chủ nhật** | - Tìm hiểu **Amazon Relational Database Service (Amazon RDS)**.<br>- Nghiên cứu các hệ quản trị cơ sở dữ liệu được Amazon RDS hỗ trợ.<br>+ Hiểu lợi ích của dịch vụ cơ sở dữ liệu được quản lý trên AWS. | 03/05/2026 | 03/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 2** | - Học nội dung **Overview of Amazon RDS**.<br>- Tìm hiểu kiến trúc, tính năng và các thành phần chính của Amazon RDS.<br>+ Ghi chú khả năng áp dụng RDS cho các hệ thống web và doanh nghiệp. | 04/05/2026 | 04/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - Tìm hiểu **AWS Identity and Access Management (IAM) Access Control**.<br>- Nghiên cứu User, Group, Role, Policy và cơ chế phân quyền trong AWS.<br>+ Tìm hiểu nguyên tắc phân quyền tối thiểu (Least Privilege). | 05/05/2026 | 05/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 4** | - Tổng hợp kiến thức về Amazon S3, Amazon RDS và IAM.<br>- So sánh vai trò của từng dịch vụ trong kiến trúc hệ thống AWS.<br>+ Ghi chú các nội dung quan trọng phục vụ báo cáo thực tập. | 06/05/2026 | 06/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 5** | - Ôn tập toàn bộ nội dung đã học trong tuần.<br>- Đánh giá khả năng ứng dụng Amazon S3, Amazon RDS và IAM vào dự án EAM Workspace.<br>+ Chuẩn bị kế hoạch học tập cho tuần tiếp theo. | 07/05/2026 | 07/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 3:
+* Hiểu được nguyên lý hoạt động và các tính năng cơ bản của **Amazon S3**, bao gồm Bucket, Object và Storage Class.
+* Nắm được kiến thức tổng quan về **Amazon Relational Database Service (Amazon RDS)** và vai trò của dịch vụ trong việc triển khai cơ sở dữ liệu trên AWS.
+* Hiểu được cơ chế **AWS Identity and Access Management (IAM)** và cách quản lý quyền truy cập thông qua User, Group, Role và Policy.
+* Có nền tảng để áp dụng các dịch vụ lưu trữ, cơ sở dữ liệu và quản lý truy cập vào quá trình triển khai các ứng dụng trên nền tảng AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Tiếp tục tìm hiểu các dịch vụ AWS nâng cao và thực hành triển khai hệ thống trên AWS.
+* Thực hành sử dụng Amazon S3 và Amazon RDS trong các bài Lab.
+* Nghiên cứu cách tích hợp các dịch vụ AWS vào dự án **EAM Workspace** nhằm phục vụ cho quá trình phát triển và triển khai hệ thống.
 
 

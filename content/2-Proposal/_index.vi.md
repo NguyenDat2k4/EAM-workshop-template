@@ -9,100 +9,196 @@ pre: " <b> 2. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+# Bản đề xuất: Triển khai hệ thống quản lý tài sản doanh nghiệp
+## Không gian làm việc cloud cho quản lý tài sản doanh nghiệp
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+### 1. Tóm tắt đề xuất
+Đề tài của project là xây dựng EAM Workspace, một hệ thống quản lý tài sản doanh nghiệp chạy trên nền tảng web và được triển khai lên AWS. Hệ thống hướng đến bài toán quản lý tài sản văn phòng trong doanh nghiệp, nơi thông tin về thiết bị, người sử dụng, bàn giao, bảo trì và kiểm kê cần được theo dõi rõ ràng, tập trung và dễ truy xuất.
 
-### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+EAM Workspace hỗ trợ doanh nghiệp quản lý nhân viên, phòng ban, tài sản, bàn giao, yêu cầu bảo trì, phiên kiểm kê, báo cáo, góp ý, FAQ, chấm công, lịch sử đăng nhập, thông báo và support chat trong một không gian làm việc tập trung. Thay vì lưu thông tin rời rạc bằng Excel, tin nhắn hoặc file nội bộ, hệ thống gom các luồng nghiệp vụ chính vào một ứng dụng có phân quyền rõ ràng cho quản trị viên và nhân viên.
 
-### 2. Tuyên bố vấn đề  
-*Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+Hệ thống được phát triển theo nhóm 5 thành viên. Dự án bao gồm frontend React, backend Node.js/Express, cơ sở dữ liệu MySQL được quản lý bằng Prisma, và phương án triển khai trên AWS. Trong phạm vi báo cáo này, nội dung tập trung vào quá trình xây dựng giao diện, tích hợp API, tìm hiểu các dịch vụ AWS, triển khai demo full-stack và tài liệu hóa workshop trong giai đoạn thực tập từ 17/04/2026 đến 10/07/2026.
 
-*Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+Ở bản demo, kiến trúc AWS sử dụng AWS Amplify Hosting cho frontend, Amazon API Gateway làm lớp API public, AWS Elastic Beanstalk cho backend Node.js, Amazon RDS for MySQL cho dữ liệu nghiệp vụ, Amazon SES cho gửi email và Amazon CloudWatch cho log/monitoring. Một số dịch vụ như Amazon S3, AWS Secrets Manager, AWS Systems Manager Parameter Store và AWS CloudTrail được đưa vào như định hướng mở rộng để hệ thống sẵn sàng hơn khi chuyển sang môi trường production.
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+---
 
-### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+### 2. Mục đích sử dụng của hệ thống
+EAM Workspace được dùng để hỗ trợ doanh nghiệp quản lý toàn bộ vòng đời tài sản từ lúc tạo mới, phân loại, bàn giao cho nhân viên, ghi nhận bảo trì, kiểm kê, thu hồi cho đến báo cáo tình trạng sử dụng. Hệ thống phù hợp với các doanh nghiệp có nhiều thiết bị văn phòng như laptop, màn hình, máy in, thiết bị ngoại vi hoặc tài sản cần theo dõi theo phòng ban và người sử dụng.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+Với quản trị viên, hệ thống giúp theo dõi danh sách tài sản, tình trạng tài sản, nhân viên đang sử dụng, lịch sử bàn giao, yêu cầu bảo trì, dữ liệu kiểm kê và báo cáo tổng quan. Với nhân viên, hệ thống cung cấp cổng tự phục vụ để xem tài sản được cấp, gửi yêu cầu hỗ trợ, xem thông tin cá nhân và theo dõi các hoạt động liên quan đến tài sản của mình.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+Mục tiêu chính của đề tài không chỉ là xây dựng một ứng dụng web có đầy đủ chức năng quản lý tài sản, mà còn là thực hành cách đưa một hệ thống full-stack lên AWS, cấu hình kết nối frontend-backend-database, kiểm thử môi trường public và kiểm soát chi phí sau khi triển khai.
 
-*Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+---
 
-*Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+### 3. Vấn đề cần giải quyết
+#### Vấn đề hiện tại
+Nhiều doanh nghiệp nhỏ và vừa vẫn quản lý tài sản văn phòng bằng bảng tính, tin nhắn hoặc các file nội bộ rời rạc. Cách làm này tạo ra nhiều vấn đề:
+* Thông tin tài sản bị phân tán và khó cập nhật.
+* Quản trị viên khó theo dõi ai đang sử dụng tài sản nào.
+* Lịch sử bàn giao, thu hồi, chuyển giao, bảo trì và kiểm kê khó truy vết.
+* Nhân viên không có cổng tự phục vụ rõ ràng để xem tài sản được cấp hoặc gửi yêu cầu hỗ trợ.
+* Việc lập báo cáo chậm vì dữ liệu phải được gom và xử lý thủ công.
+* File đính kèm, hình ảnh tài sản và feedback khó được tổ chức tập trung.
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+#### Giải pháp đề xuất
+EAM Workspace giải quyết các vấn đề trên bằng cách cung cấp một ứng dụng web tập trung với hai portal chính:
+* **Admin Portal**: dành cho quản trị viên để quản lý nhân viên, phòng ban, danh mục tài sản, tài sản, bàn giao, yêu cầu bảo trì, phiên kiểm kê, vị trí, báo cáo, feedback, FAQ, lịch sử chấm công, lịch sử đăng nhập và support chat.
+* **Employee Portal**: dành cho nhân viên để xem tài sản được bàn giao, xem chi tiết tài sản, gửi yêu cầu hỗ trợ, xem FAQ, cập nhật hồ sơ, đổi mật khẩu, xem lịch sử cá nhân và trao đổi hỗ trợ.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+Ứng dụng được triển khai lên AWS để frontend, backend, database và các dịch vụ hỗ trợ có thể chạy trong môi trường cloud, dễ truy cập, dễ giám sát và dễ mở rộng hơn. Trong giai đoạn thực tập, quá trình tự học AWS được thực hiện song song với phát triển sản phẩm, tập trung vào các chủ đề tài khoản AWS, IAM, networking, compute, database, storage, deployment, monitoring và tối ưu chi phí.
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+#### Lợi ích
+* Quản lý tập trung vòng đời tài sản từ tạo mới, bàn giao, bảo trì, kiểm kê đến báo cáo.
+* Tách rõ luồng làm việc của quản trị viên và nhân viên.
+* Tăng tính bảo mật thông qua xác thực, phân quyền theo role, database private và kiểm soát biến môi trường.
+* Dễ demo và triển khai nhờ các dịch vụ managed của AWS.
+* Có lộ trình nâng cấp rõ ràng từ môi trường demo nội bộ lên môi trường production.
 
-### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+---
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+### 4. Kiến trúc giải pháp
+Kiến trúc triển khai AWS được đề xuất theo mô hình ứng dụng web full-stack đơn giản cho môi trường demo nội bộ. Chế độ triển khai hiện tại không yêu cầu Route 53 hoặc custom domain. Người dùng truy cập URL mặc định của AWS Amplify Hosting, và các request API từ frontend được rewrite qua `/api/*` đến Amazon API Gateway. API Gateway tiếp tục chuyển request đến backend chạy trên AWS Elastic Beanstalk, backend kết nối đến Amazon RDS for MySQL.
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+#### Dịch vụ AWS sử dụng
+* **AWS Amplify Hosting**: host và build frontend React từ nhánh triển khai.
+* **Amazon API Gateway HTTP API**: nhận request `/api/*` từ Amplify và chuyển tiếp đến backend.
+* **AWS Elastic Beanstalk**: chạy backend Node.js/Express với quy trình deploy được AWS quản lý.
+* **Amazon EC2**: cung cấp compute instance do Elastic Beanstalk quản lý.
+* **Amazon RDS for MySQL**: lưu dữ liệu như user, nhân viên, tài sản, bàn giao, yêu cầu bảo trì, phiên kiểm kê và báo cáo.
+* **Amazon S3**: lưu ảnh tài sản và file upload trong thiết kế mở rộng cho môi trường production.
+* **Amazon SES**: gửi OTP và email của ứng dụng.
+* **AWS Secrets Manager**: định hướng lưu các giá trị nhạy cảm như application secret hoặc thông tin database khi nâng cấp khỏi chế độ demo.
+* **AWS Systems Manager Parameter Store**: định hướng lưu các giá trị cấu hình runtime.
+* **Amazon CloudWatch Logs and Alarms**: thu thập log backend và hỗ trợ monitoring.
+* **AWS CloudTrail**: định hướng ghi nhận hoạt động trong AWS account để phục vụ audit.
+* **AWS Systems Manager Session Manager**: định hướng hỗ trợ quản trị instance an toàn hơn mà không cần mở SSH public.
 
-### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+#### Thành phần ứng dụng
+* **Frontend**: React, Vite, Tailwind CSS, React Router, component UI tái sử dụng, Admin Portal và Employee Portal.
+* **Backend**: Node.js, Express.js, Prisma ORM, JWT authentication, validation, centralized error handling, request logging và các REST API module.
+* **Database**: schema MySQL cho users, employees, departments, assets, assignments, maintenance requests, inventory sessions, notifications, feedback, attendance, login history và support chat.
+* **Deployment**: AWS Amplify cho frontend hosting, API Gateway cho API entrypoint, Elastic Beanstalk cho backend hosting, RDS cho database và CloudWatch cho log.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+---
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+### 5. Kế hoạch triển khai kỹ thuật
+* **Giai đoạn 1: Phân tích yêu cầu và lập kế hoạch UI**
+  * Phân tích bài toán quản lý tài sản và xác định các module chính.
+  * Xác định hai nhóm người dùng: quản trị viên và nhân viên.
+  * Thiết kế các luồng chính cho tạo tài sản, bàn giao, thu hồi, bảo trì, kiểm kê, báo cáo và self-service của nhân viên.
+  * Xây dựng các mẫu UI tái sử dụng cho Admin Portal.
+  * Tự học nền tảng AWS về tài khoản, quản lý chi phí, IAM, Region/AZ và các khái niệm cloud cơ bản.
 
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+* **Giai đoạn 2: Nền tảng backend và database**
+  * Thiết kế schema MySQL bằng Prisma.
+  * Triển khai authentication, authorization, kiểm tra trạng thái tài khoản và xử lý mật khẩu.
+  * Xây dựng REST API cho nhân viên, phòng ban, danh mục, tài sản, bàn giao, yêu cầu bảo trì, kiểm kê, báo cáo, notification, feedback, FAQ, chấm công, lịch sử đăng nhập và support chat.
+  * Thêm seed data cho tài khoản demo và dữ liệu nghiệp vụ mẫu.
+
+* **Giai đoạn 3: Phát triển frontend**
+  * Xây dựng các màn hình Admin Portal cho quản lý tài sản và tổ chức.
+  * Xây dựng các màn hình Employee Portal cho luồng self-service.
+  * Tích hợp API với backend.
+  * Thêm loading, empty, error và toast state.
+  * Rà soát responsive behavior và dark/light mode.
+  * Tự học thêm các dịch vụ AWS liên quan đến compute, storage, database, networking và deployment để chuẩn bị cho giai đoạn triển khai.
+
+* **Giai đoạn 4: Triển khai AWS**
+  * Tạo hoặc sử dụng Amazon RDS for MySQL cho database của ứng dụng.
+  * Cấu hình security group để backend có thể truy cập RDS qua port 3306.
+  * Deploy backend lên AWS Elastic Beanstalk và tạo source bundle phù hợp với môi trường Linux.
+  * Cấu hình biến môi trường như DATABASE_URL, JWT_SECRET, PORT, FRONTEND_ORIGIN và mail settings.
+  * Chạy Prisma migration và seed data nếu cần.
+  * Deploy frontend lên AWS Amplify Hosting.
+  * Cấu hình Amazon API Gateway HTTP API để proxy request đến backend Elastic Beanstalk.
+  * Cấu hình Amplify rewrite rule từ `/api/*` đến endpoint API Gateway và SPA fallback về index.html.
+
+* **Giai đoạn 5: Kiểm thử và xác nhận**
+  * Kiểm tra `GET /api/health`.
+  * Kiểm thử đăng nhập admin và nhân viên.
+  * Kiểm thử các luồng CRUD chính.
+  * Kiểm thử bàn giao tài sản, thu hồi, yêu cầu bảo trì, kiểm kê và báo cáo.
+  * Kiểm tra CloudWatch Logs để phát hiện lỗi backend.
+  * Xác nhận CORS, API Gateway route/stage/integration và Amplify rewrite rule hoạt động đúng.
+  * Kiểm tra upload ảnh/avatar, trạng thái tài khoản inactive và các flow demo chính.
+
+---
+
+### 6. Lộ trình và mốc triển khai
+
+| Thời gian | Mốc triển khai | Kết quả kỳ vọng |
+| --- | --- | --- |
+| **Tuần 1** | Định hướng dự án và nền tảng AWS | Xác định vai trò frontend, chuẩn bị môi trường và học các khái niệm AWS cơ bản. |
+| **Tuần 2** | Khởi tạo React app và layout admin | Dựng cấu trúc route, sidebar, layout và component cơ bản. |
+| **Tuần 3** | Login, token và API layer | Hoàn thiện protected route, xử lý token và service layer để tích hợp backend. |
+| **Tuần 4** | CRUD admin cơ bản | Hoàn thiện màn hình tài sản, nhân viên, phòng ban và các form/table chính. |
+| **Tuần 5** | Workflow tài sản | Phát triển bàn giao, thu hồi, điều chuyển và bảo trì tài sản. |
+| **Tuần 6** | Kiểm kê, báo cáo và dữ liệu | Hoàn thiện inventory, report, biểu đồ và trạng thái dữ liệu. |
+| **Tuần 7** | Hoàn thiện trải nghiệm giao diện | Nâng cấp responsive, dark mode, loading, toast và xử lý lỗi UI. |
+| **Tuần 8** | User portal và module mở rộng | Hoàn thiện employee dashboard, tài sản được bàn giao, FAQ, feedback, import Excel và floor map. |
+| **Tuần 9** | Chuẩn bị triển khai AWS | Rà soát production build, cấu hình môi trường, tài liệu deploy và xử lý lỗi tích hợp. |
+| **Tuần 10** | Deploy AWS | Triển khai với RDS, Elastic Beanstalk, API Gateway và Amplify; kiểm thử health endpoint và luồng đăng nhập. |
+| **Tuần 11** | Kiểm thử production và tài liệu workshop | Sửa lỗi tích hợp, kiểm tra các màn hình chính, chụp ảnh workshop và bổ sung hướng dẫn triển khai. |
+| **Tuần 12** | Hoàn thiện báo cáo cuối kỳ | Rà soát Hugo site, hoàn thiện self-evaluation, sharing/feedback, cleanup và chuẩn bị nộp báo cáo. |
+
+---
+
+### 7. Ước tính ngân sách
+Dự án được thiết kế cho môi trường demo nội bộ, vì vậy lần triển khai đầu tiên ưu tiên chi phí thấp thay vì độ sẵn sàng cao. Chi phí cuối cùng cần được kiểm tra bằng AWS Pricing Calculator trước khi triển khai vì giá AWS thay đổi theo Region, loại instance, dung lượng lưu trữ và traffic.
+
+| Dịch vụ | Lựa chọn tối ưu chi phí |
+| --- | --- |
+| **AWS Amplify Hosting** | Dùng domain mặc định của Amplify và chỉ deploy branch cần thiết. |
+| **Amazon API Gateway** | Dùng HTTP API đơn giản cho route `/api/*`. |
+| **AWS Elastic Beanstalk / EC2** | Dùng một instance nhỏ cho môi trường demo. |
+| **Amazon RDS for MySQL** | Dùng Single-AZ và instance class nhỏ cho dev/test. |
+| **Amazon S3** | Chỉ lưu các file upload cần thiết và áp dụng clean-up policy khi cần. |
+| **Amazon SES** | Chỉ dùng cho OTP và email flow của ứng dụng. |
+| **CloudWatch** | Giới hạn thời gian lưu log cho môi trường demo. |
+
+#### Các hành động kiểm soát chi phí:
+* Dùng một AWS Region cho toàn bộ resource.
+* Không bật RDS Multi-AZ trong giai đoạn demo.
+* Không dùng Route 53 và custom domain cho đến khi cần production.
+* Clean up Elastic Beanstalk, API Gateway, RDS, S3 và CloudWatch sau workshop.
+* Không giữ các môi trường deploy không còn sử dụng.
+
+---
+
+### 8. Đánh giá rủi ro
+
+| Rủi ro | Ảnh hưởng | Xác suất | Cách giảm thiểu |
+| --- | --- | --- | --- |
+| **Amplify rewrite rule sai** | Frontend không gọi được backend API hoặc static assets bị lỗi MIME type | Trung bình | Đặt rule `/api/*` phía trên SPA fallback, giữ static assets không bị rewrite sai và test `/api/health`. |
+| **API Gateway route hoặc stage sai** | API trả 404 dù backend vẫn chạy | Trung bình | Kiểm tra route, integration, stage và parameter mapping trước khi test frontend. |
+| **Sai port Elastic Beanstalk** | Backend bị unhealthy | Trung bình | Set `PORT=8080` và đảm bảo backend đọc port từ biến môi trường. |
+| **Cấu hình security group RDS sai** | Backend không kết nối được MySQL | Trung bình | Chỉ mở port 3306 từ backend security group. |
+| **Lỗi CORS** | Browser chặn API call | Trung bình | Set `FRONTEND_ORIGIN` hoặc `FRONTEND_ORIGINS` đúng URL Amplify. |
+| **Thiếu hoặc sai biến môi trường production** | Login, upload hoặc health check bị lỗi | Trung bình | Chuẩn hóa `DATABASE_URL`, `JWT_SECRET`, `FRONTEND_ORIGIN`, OTP/mail config và kiểm tra từng lớp sau deploy. |
+| **File upload không bền vững** | File upload có thể mất khi instance bị thay thế | Trung bình | Dùng S3 private bucket cho production-ready storage hoặc ghi rõ giới hạn local upload trong demo. |
+| **Phát sinh chi phí ngoài dự kiến** | Tốn chi phí AWS không cần thiết | Thấp đến trung bình | Dùng resource nhỏ nhất cho demo, đặt budget alert và clean up sau khi kiểm thử. |
+| **Thiếu dữ liệu test** | Không demo được các luồng chính | Trung bình | Chạy Prisma seed trước demo và tài liệu hóa tài khoản demo riêng. |
+
+---
+
+### 9. Kết quả kỳ vọng
+Sau khi hoàn thành project và workshop, các kết quả kỳ vọng gồm:
+* Một ứng dụng Enterprise Asset Management hoạt động với Admin Portal và Employee Portal.
+* Backend API hỗ trợ authentication, authorization, asset lifecycle workflow, reporting, notification, feedback, attendance và support chat.
+* Schema MySQL lưu trữ dữ liệu nghiệp vụ cốt lõi của hệ thống.
+* Mô hình triển khai AWS thực tế sử dụng Amplify, API Gateway, Elastic Beanstalk, RDS, SES và CloudWatch, kèm định hướng mở rộng với S3, Secrets Manager và Parameter Store.
+* Một workshop step-by-step để người học khác có thể làm theo, triển khai và kiểm thử hệ thống.
+* Hiểu rõ hơn về triển khai full-stack, cloud networking, biến môi trường, CORS, kết nối database, monitoring và clean-up trên AWS.
+
+---
+
+### 10. Hướng phát triển trong tương lai
+* Chuyển toàn bộ file upload từ local instance storage sang Amazon S3.
+* Thêm Route 53 và AWS Certificate Manager khi cần custom production domain.
+* Bật RDS Multi-AZ để tăng độ sẵn sàng.
+* Thêm Auto Scaling cho backend khi traffic tăng.
+* Thêm Amazon ElastiCache for Redis nếu ứng dụng cần shared state cho nhiều backend instance.
+* Thêm AWS WAF khi ứng dụng mở public-facing.
+* Cải thiện CI/CD và automated testing cho cả frontend và backend.

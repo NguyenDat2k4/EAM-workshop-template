@@ -5,55 +5,35 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Trong tuần thứ năm, nội dung thực tập tập trung vào các dịch vụ giúp triển khai ứng dụng có tính sẵn sàng cao và khả năng mở rộng trên AWS. Trọng tâm là tìm hiểu **Amazon EC2**, **Amazon EC2 Auto Scaling (ASG)** và cách kết hợp với **Elastic Load Balancer (ELB)** để tự động mở rộng hệ thống, thay thế các máy chủ gặp sự cố và phân phối lưu lượng truy cập giữa nhiều EC2 Instance.
 
 ### Mục tiêu tuần 5:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu dịch vụ Amazon EC2 và các thành phần liên quan.
+* Hiểu cơ chế hoạt động của Amazon EC2 Auto Scaling.
+* Nghiên cứu khả năng tự động thay thế các EC2 Instance gặp sự cố.
+* Tìm hiểu cách kết hợp Auto Scaling với Elastic Load Balancer để đảm bảo tính sẵn sàng của hệ thống.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Ôn tập kiến thức về **Amazon EC2** và vai trò của máy chủ ảo trong triển khai ứng dụng.<br>- Tìm hiểu các loại EC2 Instance, AMI và Instance Type.<br>+ Ghi chú các trường hợp sử dụng EC2 trong thực tế. | 15/05/2026 | 15/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 7** | - Tìm hiểu **Amazon EC2 Auto Scaling (ASG)**.<br>- Nghiên cứu Auto Scaling Group, Launch Template và Scaling Policy.<br>+ Hiểu nguyên lý tự động mở rộng và thu hẹp số lượng EC2 Instance. | 16/05/2026 | 16/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Chủ nhật** | - Thực hành tạo Auto Scaling Group.<br>- Tìm hiểu cơ chế tự động thay thế các EC2 Instance gặp sự cố nhằm duy trì tính sẵn sàng của hệ thống.<br>+ Quan sát quá trình Auto Scaling hoạt động trên AWS Console. | 17/05/2026 | 17/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 2** | - Tìm hiểu **Elastic Load Balancer (ELB)**.<br>- Nghiên cứu cơ chế phân phối lưu lượng truy cập giữa nhiều EC2 Instance.<br>+ Hiểu vai trò của ELB trong việc tăng tính sẵn sàng và khả năng chịu tải của ứng dụng. | 18/05/2026 | 18/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - Kết hợp **Elastic Load Balancer** với **Amazon EC2 Auto Scaling**.<br>- Tìm hiểu quy trình tự động phân phối tải và mở rộng hệ thống khi lưu lượng tăng.<br>+ Ghi nhận kiến trúc triển khai ứng dụng có khả năng mở rộng trên AWS. | 19/05/2026 | 19/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 4** | - Tổng hợp kiến thức về Amazon EC2, Auto Scaling và Elastic Load Balancer.<br>- Đánh giá ưu điểm của mô hình triển khai ứng dụng có tính sẵn sàng cao.<br>+ Hoàn thiện tài liệu ghi chú phục vụ báo cáo thực tập. | 20/05/2026 | 20/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 5** | - Ôn tập toàn bộ nội dung đã học trong tuần.<br>- Đánh giá khả năng áp dụng Amazon EC2 Auto Scaling vào triển khai hệ thống thực tế.<br>+ Chuẩn bị kế hoạch học tập và thực hành cho tuần tiếp theo. | 21/05/2026 | 21/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 5:
+* Hiểu được nguyên lý hoạt động của **Amazon EC2** và quy trình triển khai máy chủ trên AWS.
+* Nắm được cách cấu hình và sử dụng **Amazon EC2 Auto Scaling** để tự động mở rộng hoặc thu hẹp số lượng EC2 Instance theo nhu cầu.
+* Hiểu cơ chế **tự động thay thế các Instance gặp sự cố**, giúp đảm bảo ứng dụng luôn sẵn sàng phục vụ.
+* Hiểu cách **kết hợp Auto Scaling với Elastic Load Balancer** để phân phối đều lưu lượng truy cập giữa các EC2 Instance và nâng cao tính sẵn sàng của hệ thống.
+* Có nền tảng kiến thức về kiến trúc triển khai ứng dụng có khả năng mở rộng và chịu tải trên nền tảng AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Tiếp tục nghiên cứu các dịch vụ hỗ trợ triển khai và giám sát hệ thống trên AWS.
+* Thực hành xây dựng kiến trúc ứng dụng có tính sẵn sàng cao và khả năng mở rộng.
+* Tìm hiểu các dịch vụ giám sát, ghi log và tối ưu hiệu năng nhằm phục vụ triển khai dự án **EAM Workspace** trên nền tảng AWS.
 
 

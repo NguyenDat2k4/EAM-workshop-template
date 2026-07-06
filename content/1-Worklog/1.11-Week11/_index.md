@@ -5,53 +5,32 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+In the eleventh week, the work focused on integration testing of the entire EAM Workspace system, optimizing performance, and finalizing features before acceptance testing. Additionally, source code was reviewed, arising bugs were handled, and technical documentation was updated according to the final version of the system.
 
 ### Week 11 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Perform integration testing of the entire system.
+* Finalize and optimize the implemented features.
+* Review source code and resolve outstanding issues.
+* Prepare the system for acceptance testing.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| **Fri** | - Perform overall validation of system features in EAM Workspace.<br>- Evaluate data and control flows between Frontend, Backend, and Database.<br>+ Document bugs to be resolved. | 26/06/2026 | 26/06/2026 | Project source code, Team discussion |
+| **Sat** | - Resolve bugs identified during integration testing.<br>- Refine user interfaces and improve user experience.<br>+ Retest features after debugging. | 27/06/2026 | 27/06/2026 | Project source code, Team discussion |
+| **Sun** | - Optimize performance for APIs and database queries.<br>- Review data processing and business rules.<br>+ Ensure system stability. | 28/06/2026 | 28/06/2026 | Project source code, Team discussion |
+| **Mon** | - Test PDF/Excel export, electronic signature, and chatbot AI features.<br>- Evaluate the stability of integrated features.<br>+ Implement any missing functionalities. | 29/06/2026 | 29/06/2026 | Project source code, Team discussion |
+| **Tue** | - Review source code structure and standardize programming conventions.<br>- Verify environment configurations and deployment parameters.<br>+ Update technical documentation to the latest version. | 30/06/2026 | 30/06/2026 | Project source code, Team discussion |
+| **Wed** | - Perform regression testing after completing modifications.<br>- Evaluate the operational stability of the entire system.<br>+ Consolidate testing results. | 01/07/2026 | 01/07/2026 | Project source code, Team discussion |
+| **Thu** | - Finalize technical documentation and update the project development log.<br>- Prepare report content and the system acceptance plan.<br>+ Summarize accomplishments for the week. | 02/07/2026 | 02/07/2026 | Project source code, Team discussion |
 
 ### Week 11 Achievements:
+* Completed integration testing for the main features of the EAM Workspace system.
+* Resolved arising bugs and optimized system performance.
+* Finalized source code and standardized technical documentation.
+* Ensured the system operates stably, ready for acceptance testing and the internship report.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Plan for the Next Week:
+* Summarize the entire internship process and finalize the report.
+* Prepare presentation slides and system demos.
+* Perform a final review of the documentation, source code, and deliverables before completing the internship.

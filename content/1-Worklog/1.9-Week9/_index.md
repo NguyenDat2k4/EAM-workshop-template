@@ -5,53 +5,30 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+This week's internship tasks focused on designing the system deployment architecture on AWS, completing the design documentation, and preparing all necessary resources for the actual production deployment of the **EAM Workspace** project.
 
 ### Week 9 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Design the deployment architecture for the system on AWS.
+* Complete the architectural design documentation.
+* Prepare for production deployment.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| **Fri** | - Analyze deployment requirements for the **EAM Workspace** project.<br>- Draft the overall AWS Architecture Diagram for the system.<br>+ Prepare related design documentation. | 12/06/2026 | 12/06/2026 | Project source code, Team discussion |
+| **Sat** | - Design the detailed user access path.<br>- Analyze traffic routing through the Frontend (AWS Amplify), Application Load Balancer, Elastic Beanstalk, and Amazon RDS.<br>+ Document packet routing and data connections. | 13/06/2026 | 13/06/2026 | Project source code, Team discussion |
+| **Sun** | - Design the logical network infrastructure model for the system.<br>- Segment the network layout consisting of a VPC, Public Subnets (for ELB, NAT), Private Subnets (for app, DB), Internet Gateway, and NAT Gateway.<br>+ Ensure appropriate security and network isolation. | 14/06/2026 | 14/06/2026 | Project source code, Team discussion |
+| **Mon** | - Design the integration of object storage and email notification services.<br>- Incorporate Amazon S3 and Amazon SES into the infrastructure design.<br>+ Plan configuration details and source code integration. | 15/06/2026 | 15/06/2026 | Project source code, Team discussion |
+| **Tue** | - Design and add solutions for log monitoring, audit trails, and secure configurations.<br>- Integrate CloudWatch Logs, CloudTrail, Secrets Manager, and Parameter Store.<br>+ Establish standards for managing secure environment variables. | 16/06/2026 | 16/06/2026 | Project source code, Team discussion |
+| **Wed** | - Review the entire designed network and system infrastructure architecture.<br>- Evaluate Scalability, High Availability, and information security.<br>+ Revise suboptimal areas in technical drawings. | 17/06/2026 | 17/06/2026 | Project source code, Team discussion |
+| **Thu** | - Finalize deployment architecture diagrams and descriptions.<br>- Assess and prepare resources required for actual infrastructure deployment.<br>+ Plan tasks for the next week. | 18/06/2026 | 18/06/2026 | Project source code, Team discussion |
 
 ### Week 9 Achievements:
+* Completed the AWS deployment architecture diagram (AWS Architecture Diagram) for the **EAM Workspace** system.
+* Finalized the network model and application deployment flow.
+* Identified all AWS services required for the project, including: AWS Amplify, Elastic Beanstalk, Application Load Balancer, Amazon RDS, Amazon S3, Amazon SES, CloudWatch, CloudTrail, Secrets Manager, and Parameter Store.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Plan for the Next Week:
+* Start deploying the network infrastructure (VPC, Subnets, Route Tables, IGW, NAT Gateway) on AWS.
+* Set up related AWS services and prepare environment for application deployment.
+* Perform test deployments of Frontend and Backend components on the actual AWS environment.

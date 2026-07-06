@@ -1,125 +1,91 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications"
+date: 2026-07-04
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# BÁO CÁO THAM GIA STUDY TOUR: AWS — ENTERPRISE CLOUD ARCHITECTURES & INDUSTRY APPLICATIONS
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+![Study Tour Group](/images/4-EventParticipated/4.1-Event1/study_tour_group.jpg)
 
-### Mục Đích Của Sự Kiện
+## 1. Thông tin chương trình
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+* **Tên chương trình:** Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications
+* **Thời gian:** Thứ Bảy, ngày 04/07/2026
+* **Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
+* **Đơn vị tổ chức:** Swinburne Việt Nam phối hợp cùng Amazon Web Services (AWS) và các đối tác công nghệ.
 
-### Danh Sách Diễn Giả
+---
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+## 2. Mục đích tham gia
 
-### Nội Dung Nổi Bật
+Nhằm nâng cao kiến thức về điện toán đám mây (Cloud Computing), trí tuệ nhân tạo tạo sinh (Generative AI), cũng như tìm hiểu xu hướng phát triển của ngành công nghệ thông tin và cơ hội nghề nghiệp trong lĩnh vực Cloud. Đồng thời, chương trình giúp sinh viên tiếp cận môi trường làm việc thực tế, giao lưu với các chuyên gia và doanh nghiệp hàng đầu trong ngành.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+---
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+## 3. Nội dung chương trình
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+Trong chương trình, em đã được lắng nghe nhiều chia sẻ từ các chuyên gia đến từ AWS Việt Nam, Renova Cloud, Cloud Kinetics cùng các kỹ sư đang làm việc trong lĩnh vực Cloud và Generative AI.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Các nội dung nổi bật gồm:
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### 3.1. Tổng quan về Cloud Computing và Generative AI
+Diễn giả đã giới thiệu xu hướng phát triển mạnh mẽ của điện toán đám mây trong thời kỳ chuyển đổi số. Các dịch vụ Cloud hiện không chỉ giúp doanh nghiệp lưu trữ dữ liệu mà còn cung cấp nhiều nền tảng hỗ trợ triển khai ứng dụng, phân tích dữ liệu, bảo mật và trí tuệ nhân tạo.
 
-#### Domain-Driven Design (DDD)
+Bên cạnh đó, Generative AI được đánh giá là một trong những công nghệ tạo ra sự thay đổi lớn đối với nhiều lĩnh vực như phát triển phần mềm, chăm sóc khách hàng, giáo dục, tài chính và y tế.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### 3.2. Xu hướng nghề nghiệp trong lĩnh vực Cloud
+Các chuyên gia đã chia sẻ về nhu cầu tuyển dụng ngày càng cao đối với các vị trí như:
+* Cloud Engineer
+* Cloud Architect
+* DevOps Engineer
+* Data Engineer
+* Solutions Architect
+* AI Engineer
 
-#### Event-Driven Architecture
+Để đáp ứng nhu cầu của doanh nghiệp, sinh viên cần xây dựng nền tảng kiến thức vững chắc về mạng máy tính, hệ điều hành, lập trình, cơ sở dữ liệu và các dịch vụ Cloud. Ngoài kiến thức chuyên môn, kỹ năng giao tiếp, làm việc nhóm, tư duy giải quyết vấn đề và khả năng tự học cũng được đánh giá rất cao.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### 3.3. Từ kiến thức trên giảng đường đến thực tế doanh nghiệp
+Một trong những nội dung em ấn tượng nhất là phần chia sẻ hành trình phát triển từ sinh viên đến kỹ sư dữ liệu. Diễn giả nhấn mạnh rằng kiến thức học tại trường là nền tảng quan trọng, tuy nhiên để đáp ứng yêu cầu công việc, sinh viên cần chủ động tham gia các dự án thực tế, xây dựng sản phẩm cá nhân, học thêm các chứng chỉ chuyên môn và không ngừng cập nhật công nghệ mới.
 
-#### Compute Evolution
+### 3.4. Phiên thảo luận (Fireside Chat)
+Buổi thảo luận tập trung vào việc phát triển nguồn nhân lực công nghệ chất lượng cao tại Việt Nam. Các chuyên gia chia sẻ kinh nghiệm làm việc trong môi trường quốc tế, những kỹ năng mà doanh nghiệp đang tìm kiếm và định hướng học tập dành cho sinh viên muốn theo đuổi lĩnh vực Cloud và AI.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+![Event Session](/images/4-EventParticipated/4.1-Event1/event_session.jpg)
 
-#### Amazon Q Developer
+---
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+## 4. Những kiến thức và kinh nghiệm tiếp thu
 
-### Những Gì Học Được
+Sau khi tham gia chương trình, em đã học được nhiều kiến thức và kinh nghiệm thực tế như:
+* Hiểu rõ hơn về vai trò của Cloud Computing trong quá trình chuyển đổi số của doanh nghiệp.
+* Nắm được xu hướng phát triển của Generative AI và các ứng dụng trong thực tế.
+* Biết được các vị trí nghề nghiệp phổ biến trong lĩnh vực Cloud cùng những kỹ năng cần chuẩn bị.
+* Nhận thức được tầm quan trọng của việc học đi đôi với thực hành thông qua các dự án thực tế.
+* Hiểu rằng việc liên tục cập nhật công nghệ và học tập suốt đời là yếu tố cần thiết đối với một kỹ sư công nghệ thông tin.
 
-#### Tư Duy Thiết Kế
+---
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+## 5. Liên hệ với bản thân
 
-#### Kiến Trúc Kỹ Thuật
+Là sinh viên ngành Công nghệ thông tin, em nhận thấy những kiến thức được chia sẻ trong chương trình có ý nghĩa rất thiết thực đối với định hướng nghề nghiệp của bản thân.
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Hiện tại, em đang thực hiện dự án **Hệ thống Quản lý Tài sản Doanh nghiệp (Enterprise Asset Management - EAM Workspace)** có sử dụng nhiều công nghệ hiện đại như lưu trữ tệp trên Amazon S3, gửi email thông qua Amazon SES và triển khai các tính năng quản lý dữ liệu trên nền tảng web. Sau khi tham gia Study Tour, em hiểu rõ hơn cách các dịch vụ Cloud được ứng dụng trong doanh nghiệp cũng như tầm quan trọng của việc thiết kế hệ thống có khả năng mở rộng, bảo mật và tối ưu chi phí.
 
-#### Chiến Lược Hiện Đại Hóa
+Bên cạnh việc hoàn thành chương trình học tại trường, em định hướng sẽ tiếp tục tìm hiểu sâu hơn về AWS, DevOps, Docker, Kubernetes và các chứng chỉ AWS để nâng cao năng lực chuyên môn, đáp ứng nhu cầu tuyển dụng của doanh nghiệp trong tương lai.
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+![Event Hall](/images/4-EventParticipated/4.1-Event1/event_hall.jpg)
 
-### Ứng Dụng Vào Công Việc
+---
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+## 6. Kết luận
 
-### Trải nghiệm trong event
+Study Tour: **AWS — Enterprise Cloud Architectures & Industry Applications** là một chương trình bổ ích, mang lại nhiều kiến thức thực tiễn và góc nhìn toàn diện về ngành điện toán đám mây cũng như xu hướng phát triển của công nghệ hiện đại.
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Thông qua chương trình, em không chỉ được cập nhật những công nghệ mới nhất mà còn có cơ hội giao lưu với các chuyên gia, hiểu rõ hơn yêu cầu của doanh nghiệp và xác định định hướng học tập, phát triển nghề nghiệp trong tương lai.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+Đây là một trải nghiệm ý nghĩa, góp phần giúp em nâng cao kiến thức chuyên môn, mở rộng tư duy và tạo thêm động lực để tiếp tục học tập, nghiên cứu và phát triển bản thân trong lĩnh vực Công nghệ thông tin.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Study Tour Group Crop](/images/4-EventParticipated/4.1-Event1/study_tour_group_crop.png)

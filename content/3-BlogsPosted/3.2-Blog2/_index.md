@@ -1,31 +1,33 @@
 ---
-title: "Blog 2"
+title: "Amazon EKS Auto Mode and Istio Ambient Mesh Integration"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Integrating Amazon EKS Auto Mode and Istio Ambient Mesh Architecture
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+Hello everyone in AWS Study Group VN! While researching Kubernetes, I came across an AWS article introducing the combination of Amazon EKS Auto Mode and Istio Ambient Mesh. These two technologies work together to significantly reduce operational overhead while automatically strengthening service-to-service security.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+As a microservices system grows from a few services to hundreds of services, two major issues arise: managing infrastructure (node provisioning, patching, scaling) and securing communications between services. EKS Auto Mode + Istio Ambient Mesh is the "Better Together" solution to solve both issues.
 
-Key points to know:
+### 1. Amazon EKS Auto Mode
+This is a powerful automation mode for EKS, where AWS manages almost the entire compute layer:
+* Automatic provisioning, scaling, and patching of nodes using Karpenter (a customized version).
+* Powered by the Bottlerocket operating system – minimal, immutable, and highly secure.
+* System components (VPC CNI, kube-proxy, EBS CSI, CoreDNS, Load Balancer Controller, etc.) are managed by AWS as system processes, removing the need for manual add-on deployments.
+* Eliminates the need to SSH into nodes, reducing the attack surface.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+### 2. Istio Ambient Mesh
+This is the sidecarless architecture of Istio, allowing you to apply a service mesh without injecting sidecar proxies into every pod:
+* **ztunnel (per-node proxy):** Handles Layer 3/4 – automatic mTLS, L4 authorization, and TCP telemetry.
+* **Istio-cni:** A chained CNI plugin that redirects traffic through the ztunnel.
+* **Waypoint Proxy (optional):** Handles Layer 7 functions (HTTP routing, retries, L7 authorization, circuit breaking, etc.) when needed.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+![EKS Auto Mode + Istio Ambient Mesh](/images/3-BlogsPosted/eks_auto_mode_istio_ambient.png)
 
-...Image...
+### Conclusion:
+The combination of Amazon EKS Auto Mode and Istio Ambient Mesh delivers a modern Kubernetes environment: robust compute automation coupled with flexible service mesh security without complicating application code. This is a highly recommended direction for teams building microservices platforms on AWS.
 
-...Link...
-
-...Guide...
+**Reference Source:**
+<https://aws.amazon.com/blogs/containers/better-together-amazon-eks-auto-mode-and-istio-ambient-mesh/>

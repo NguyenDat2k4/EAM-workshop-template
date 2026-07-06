@@ -5,53 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+After gaining a foundational knowledge of Amazon Web Services (AWS), the second week focused on practical hands-on experience in building network infrastructure on AWS through Labs. The core content included configuring network components within VPC, understanding network security mechanisms, and deploying EC2 servers. Additionally, the hands-on labs were completed according to the AWS Study Group roadmap, and **200 USD AWS Credits** were received to support the learning and practice process.
 
 ### Week 2 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Practice configuring basic networking components in AWS.
+* Understand the operation of VPC and networking connection components.
+* Research network security mechanisms in AWS.
+* Complete hands-on Labs according to the AWS Study Group roadmap and receive AWS Credits.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| **Fri** | - Review knowledge about Amazon VPC and networking architecture in AWS.<br>- Learn about the roles of Subnets, Route Tables, and Internet Gateways.<br>+ Prepare the environment for hands-on Labs. | 24/04/2026 | 24/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Sat** | - Practice configuring Public Subnets and Private Subnets.<br>- Set up Route Tables and Internet Gateways to connect to the Internet.<br>+ Verify the connectivity of the network system after configuration. | 25/04/2026 | 25/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Sun** | - Practice configuring NAT Gateways for Private Subnets.<br>- Analyze traffic flow between Public and Private Subnets.<br>+ Note down deployment steps and troubleshoot issues during practice. | 26/04/2026 | 26/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Mon** | - Learn about Security Groups and Network ACLs (NACL).<br>- Compare the differences between Security Groups and NACLs.<br>+ Practice configuring rules to allow and block network access. | 27/04/2026 | 27/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Tue** | - Research the deployment process of EC2 servers.<br>- Practice launching an EC2 Instance and configuring appropriate Security Groups.<br>+ Test the accessibility and management of EC2 via the AWS Console. | 28/04/2026 | 28/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Wed** | - Complete Labs on VPC, Subnets, Route Tables, Internet Gateways, NAT Gateways, Security Groups, and EC2.<br>- Consolidate the practice results and note down important knowledge. | 29/04/2026 | 29/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thu** | - Complete all 5 hands-on Labs according to the AWS Study Group roadmap.<br>- Receive **200 USD AWS Credits** to support upcoming practical exercises.<br>+ Plan the learning goals for the next week. | 30/04/2026 | 30/04/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
 
 ### Week 2 Achievements:
+* Proficiently configured **Subnets, Route Tables, Internet Gateways**, and **NAT Gateways** in Amazon VPC.
+* Understood the operational mechanism of **Security Groups** and **Network ACLs (NACL)** in controlling network traffic.
+* Successfully deployed an **Amazon EC2** server and configured appropriate security rules.
+* Completed **05 hands-on Labs** according to the AWS Study Group roadmap.
+* Awarded **200 USD AWS Credits** to continue practicing and deploying AWS services in the subsequent weeks.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Plan for the Next Week:
+* Continue researching storage and database services on AWS, such as Amazon S3 and Amazon RDS.
+* Practice deploying applications on EC2 and connecting to other AWS services.
+* Learn about the process of deploying applications in real-world scenarios to prepare for integration into the EAM Workspace project.

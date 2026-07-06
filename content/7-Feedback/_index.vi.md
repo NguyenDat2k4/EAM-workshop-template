@@ -5,40 +5,48 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+## Đánh giá chung
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+### 1. Môi trường làm việc
+&emsp;Mình đánh giá môi trường làm việc của chương trình rất chuyên nghiệp, thân thiện và tạo động lực học tập. Trong suốt quá trình tham gia, mình luôn nhận được sự hỗ trợ từ mentor và các thành viên khi gặp khó khăn. Không khí làm việc cởi mở giúp mình mạnh dạn trao đổi ý kiến và chủ động hơn trong quá trình học tập.
 
-### Đánh giá chung
+### 2. Sự hỗ trợ của mentor / team admin
+&emsp;Mentor luôn hướng dẫn tận tình, giải đáp các thắc mắc và đưa ra những góp ý hữu ích để mình hoàn thiện kiến thức cũng như kỹ năng. Team admin cũng hỗ trợ nhanh chóng trong việc cung cấp thông tin, tài liệu và giải quyết các vấn đề phát sinh, giúp quá trình tham gia chương trình diễn ra thuận lợi.
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+### 3. Sự phù hợp giữa công việc và chuyên ngành học
+&emsp;Nội dung chương trình phù hợp với chuyên ngành Công nghệ thông tin của mình. Mình có cơ hội tiếp cận các kiến thức về điện toán đám mây, AI và quy trình phát triển dự án thực tế, từ đó vận dụng những gì đã học vào quá trình thực hành và mở rộng thêm nhiều kiến thức mới.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+### 4. Cơ hội học hỏi và phát triển kỹ năng
+&emsp;Chương trình mang đến nhiều cơ hội để mình phát triển cả kiến thức chuyên môn lẫn kỹ năng mềm. Mình học được cách làm việc nhóm hiệu quả, quản lý thời gian, tìm kiếm tài liệu, giải quyết vấn đề và tiếp cận các dịch vụ AWS thông qua những nội dung thực hành thực tế.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+### 5. Văn hóa và tinh thần đồng đội
+&emsp;Mình rất ấn tượng với tinh thần hỗ trợ và chia sẻ giữa các thành viên trong chương trình. Mọi người luôn sẵn sàng trao đổi kiến thức, cùng nhau thảo luận để giải quyết khó khăn, tạo nên một môi trường học tập tích cực và giúp mình cảm thấy thoải mái trong suốt thời gian tham gia.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+### 6. Chính sách / phúc lợi cho thực tập sinh
+&emsp;Mặc dù mục tiêu chính của chương trình là đào tạo và phát triển kỹ năng, nhưng mình đánh giá cao các hoạt động chia sẻ kiến thức, workshop và tài liệu học tập mà chương trình mang lại. Đây là những giá trị thiết thực giúp mình nâng cao năng lực chuyên môn.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+---
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+## Một số câu hỏi khác
 
+* **Điều bạn hài lòng nhất trong thời gian thực tập?**
+  * Điều mình hài lòng nhất là được học hỏi từ các mentor có nhiều kinh nghiệm và được tiếp cận với những kiến thức thực tế về AWS, Cloud và AI. Những chia sẻ này giúp mình hiểu rõ hơn về định hướng nghề nghiệp cũng như nâng cao kỹ năng chuyên môn.
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+* **Điều bạn nghĩ chương trình cần cải thiện cho các thực tập sinh sau?**
+  * Theo mình, chương trình có thể tổ chức thêm nhiều buổi chia sẻ kinh nghiệm từ các anh chị đã hoàn thành chương trình hoặc đang làm việc trong doanh nghiệp. Bên cạnh đó, có thể tăng thêm các hoạt động giao lưu giữa các nhóm để mọi người có cơ hội học hỏi và kết nối nhiều hơn.
 
+* **Nếu giới thiệu cho bạn bè, bạn có khuyên họ tham gia chương trình không? Vì sao?**
+  * Có. Mình sẽ giới thiệu vì đây là một chương trình giúp sinh viên tiếp cận kiến thức thực tế về Cloud và AI, được học hỏi từ các mentor giàu kinh nghiệm trong môi trường chuyên nghiệp. Đây là cơ hội tốt để chuẩn bị hành trang trước khi bước vào môi trường làm việc sau khi tốt nghiệp.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+---
+
+## Đề xuất và mong muốn
+
+* **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**
+  * Mình mong chương trình có thêm các buổi thực hành theo tình huống thực tế, workshop chuyên sâu về AWS và AI, cũng như nhiều hoạt động kết nối giữa các học viên để tăng cơ hội trao đổi kinh nghiệm và làm việc nhóm.
+
+* **Bạn có muốn tiếp tục chương trình này trong tương lai?**
+  * Có. Nếu chương trình tiếp tục tổ chức các khóa học hoặc hoạt động nâng cao, mình rất mong có cơ hội tham gia để cập nhật thêm kiến thức và phát triển kỹ năng chuyên môn.
+
+* **Góp ý khác (tự do chia sẻ):**
+  * Mình xin gửi lời cảm ơn đến toàn bộ đội ngũ FCAJ, các mentor và team admin đã luôn tận tình hỗ trợ trong suốt thời gian tham gia chương trình. Đây là một trải nghiệm rất đáng nhớ, giúp mình trưởng thành hơn về kiến thức, kỹ năng và tư duy làm việc. Hy vọng chương trình sẽ tiếp tục phát triển và mang đến nhiều cơ hội học tập chất lượng cho các bạn sinh viên trong những khóa tiếp theo.

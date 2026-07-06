@@ -5,55 +5,36 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Trong tuần thứ tư, nội dung thực tập tập trung vào việc triển khai ứng dụng trên môi trường AWS. Bên cạnh việc tiếp tục tìm hiểu **Amazon S3**, tiến hành thực hành thiết lập môi trường **LAMP** trên **Amazon Linux 2023**, triển khai ứng dụng **Node.js**, cấu hình kết nối cơ sở dữ liệu an toàn và quản lý dữ liệu người dùng thông qua giao diện web. Các nội dung này giúp hiểu rõ hơn quy trình triển khai một ứng dụng web hoàn chỉnh trên nền tảng AWS.
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục tìm hiểu và thực hành với dịch vụ Amazon S3.
+* Thiết lập môi trường LAMP trên Amazon Linux 2023.
+* Triển khai ứng dụng Node.js trên máy chủ AWS.
+* Thiết lập kết nối cơ sở dữ liệu an toàn cho ứng dụng web.
+* Quản lý dữ liệu người dùng thông qua giao diện web.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Tiếp tục học nội dung **Starting with Amazon S3**.<br>- Tìm hiểu cách lưu trữ, quản lý và truy cập dữ liệu trên Amazon S3.<br>+ Ghi chú các trường hợp ứng dụng S3 trong triển khai hệ thống. | 08/05/2026 | 08/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 7** | - Thực hành thiết lập và cấu hình **LAMP Stack** trên **Amazon Linux 2023**.<br>- Cài đặt Apache, MariaDB/MySQL và PHP theo hướng dẫn Lab.<br>+ Kiểm tra môi trường hoạt động sau khi cài đặt. | 09/05/2026 | 09/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Chủ nhật** | - Triển khai ứng dụng **Node.js** trên môi trường AWS.<br>- Cấu hình môi trường chạy ứng dụng và kiểm tra khả năng truy cập từ trình duyệt.<br>+ Ghi nhận quy trình triển khai ứng dụng. | 10/05/2026 | 10/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 2** | - Tìm hiểu và cấu hình kết nối cơ sở dữ liệu an toàn cho ứng dụng web.<br>- Thiết lập thông tin kết nối và kiểm tra khả năng truy cập dữ liệu.<br>+ Ghi chú các lưu ý về bảo mật khi kết nối cơ sở dữ liệu. | 11/05/2026 | 11/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - Thực hành quản lý dữ liệu người dùng thông qua giao diện web đáp ứng (Responsive Web Interface).<br>- Kiểm tra các thao tác thêm, sửa, xóa và hiển thị dữ liệu.<br>+ Đánh giá khả năng tương thích trên nhiều kích thước màn hình. | 12/05/2026 | 12/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 4** | - Tổng hợp quy trình triển khai ứng dụng Node.js và kết nối cơ sở dữ liệu trên AWS.<br>- Đánh giá các thành phần đã triển khai và ghi nhận các vấn đề gặp phải trong quá trình thực hành.<br>+ Hoàn thiện tài liệu ghi chú. | 13/05/2026 | 13/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 5** | - Ôn tập toàn bộ nội dung đã thực hiện trong tuần.<br>- Đánh giá khả năng áp dụng các kiến thức triển khai ứng dụng vào dự án **EAM Workspace**.<br>+ Chuẩn bị kế hoạch thực hiện cho tuần tiếp theo. | 14/05/2026 | 14/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 4:
+* Hiểu được cách sử dụng **Amazon S3** trong lưu trữ và quản lý dữ liệu.
+* Thiết lập thành công môi trường **LAMP Stack** trên **Amazon Linux 2023**.
+* Triển khai ứng dụng **Node.js** trên môi trường AWS và kiểm tra khả năng hoạt động.
+* Thiết lập kết nối cơ sở dữ liệu an toàn cho ứng dụng web.
+* Thực hiện quản lý dữ liệu người dùng thông qua giao diện web đáp ứng và nắm được quy trình triển khai ứng dụng web trên AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Tiếp tục nghiên cứu các dịch vụ AWS phục vụ triển khai ứng dụng thực tế.
+* Thực hành tối ưu quá trình triển khai, quản lý và bảo mật hệ thống trên AWS.
+* Tìm hiểu thêm các dịch vụ hỗ trợ như cân bằng tải, giám sát và lưu trữ để chuẩn bị áp dụng vào dự án **EAM Workspace**.
 
 

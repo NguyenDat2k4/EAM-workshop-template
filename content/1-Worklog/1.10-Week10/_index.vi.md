@@ -5,55 +5,33 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Trong tuần thứ mười, công việc tập trung vào việc hoàn thiện tài liệu thiết kế của dự án EAM Workspace thông qua việc xây dựng các sơ đồ phân tích và thiết kế hệ thống. Bên cạnh đó, tiến hành rà soát kiến trúc triển khai trên AWS, chuẩn hóa mô hình dữ liệu và cập nhật tài liệu kỹ thuật nhằm phục vụ cho quá trình phát triển, kiểm thử và báo cáo thực tập.
 
 ### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện các sơ đồ phân tích và thiết kế hệ thống.
+* Chuẩn hóa tài liệu kỹ thuật của dự án.
+* Đồng bộ tài liệu với kiến trúc triển khai và mã nguồn.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Phân tích lại nghiệp vụ của hệ thống EAM Workspace.<br>- Hoàn thiện Use Case Diagram mô tả các chức năng của hệ thống.<br>+ Rà soát quyền và vai trò của từng tác nhân. | 19/06/2026 | 19/06/2026 | Project source code, Team discussion |
+| **Thứ 7** | - Xây dựng Activity Diagram cho các quy trình như quản lý tài sản, bàn giao và phê duyệt yêu cầu.<br>- Chuẩn hóa luồng xử lý theo nghiệp vụ thực tế. | 20/06/2026 | 20/06/2026 | Project source code, Team discussion |
+| **Chủ nhật** | - Hoàn thiện Class Diagram và ER Diagram.<br>- Kiểm tra mối quan hệ giữa các bảng dữ liệu và các lớp trong hệ thống.<br>+ Đối chiếu với cấu trúc cơ sở dữ liệu hiện tại. | 21/06/2026 | 21/06/2026 | Project source code, Team discussion |
+| **Thứ 2** | - Xây dựng Sequence Diagram cho các chức năng chính như đăng nhập, quản lý tài sản và bàn giao tài sản.<br>- Mô tả luồng tương tác giữa người dùng, giao diện và hệ thống. | 22/06/2026 | 22/06/2026 | Project source code, Team discussion |
+| **Thứ 3** | - Cập nhật Deployment Diagram và rà soát kiến trúc triển khai trên AWS.<br>- Đối chiếu với kiến trúc gồm Amplify, ALB, Elastic Beanstalk, Amazon RDS và Amazon S3. | 23/06/2026 | 23/06/2026 | Project source code, Team discussion |
+| **Thứ 4** | - Kiểm tra tính nhất quán giữa sơ đồ thiết kế, cơ sở dữ liệu và mã nguồn.<br>- Điều chỉnh tài liệu kỹ thuật theo các thay đổi của dự án.<br>+ Hoàn thiện hồ sơ thiết kế hệ thống. | 24/06/2026 | 24/06/2026 | Project source code, Team discussion |
+| **Thứ 5** | - Tổng hợp toàn bộ sơ đồ và tài liệu thiết kế.<br>- Rà soát lần cuối trước khi đưa vào báo cáo thực tập.<br>+ Chuẩn bị kế hoạch hoàn thiện và nghiệm thu hệ thống. | 25/06/2026 | 25/06/2026 | Project source code, Team discussion |
 
 ### Kết quả đạt được tuần 10:
+* Hoàn thiện Use Case Diagram, Activity Diagram, Class Diagram, Sequence Diagram, ER Diagram và Deployment Diagram của hệ thống EAM Workspace.
+* Chuẩn hóa tài liệu phân tích và thiết kế theo kiến trúc thực tế của dự án.
+* Đồng bộ giữa tài liệu thiết kế, cơ sở dữ liệu và mã nguồn.
+* Hoàn thiện hồ sơ thiết kế phục vụ cho quá trình kiểm thử, nghiệm thu và báo cáo thực tập.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Kiểm thử tổng thể hệ thống và xử lý các lỗi còn tồn tại.
+* Tối ưu hiệu năng, giao diện và trải nghiệm người dùng.
+* Hoàn thiện tài liệu kỹ thuật và chuẩn bị báo cáo thực tập.
 
 

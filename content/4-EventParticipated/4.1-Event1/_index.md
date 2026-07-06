@@ -1,126 +1,91 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications"
+date: 2026-07-04
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# STUDY TOUR REPORT: AWS — ENTERPRISE CLOUD ARCHITECTURES & INDUSTRY APPLICATIONS
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+![Study Tour Group](/images/4-EventParticipated/4.1-Event1/study_tour_group.jpg)
 
-### Event Objectives
+## 1. Program Information
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+* **Program Title:** Study Tour: AWS — Enterprise Cloud Architectures & Industry Applications
+* **Time:** Saturday, July 4, 2026
+* **Location:** Bitexco Financial Tower, Ho Chi Minh City
+* **Organizer:** Swinburne Vietnam in collaboration with Amazon Web Services (AWS) and technology partners.
 
-### Speakers
+---
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+## 2. Objective of Participation
 
-### Key Highlights
+To enhance knowledge of Cloud Computing and Generative AI, as well as to learn about development trends in the information technology industry and career opportunities in the Cloud field. Additionally, the program helps students experience a real-world working environment, interact with leading experts, and network with top tech companies.
 
-#### Identifying the drawbacks of legacy application architecture
+---
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+## 3. Program Content
 
-#### Transitioning to modern application architecture – Microservices
+Throughout the program, I listened to valuable presentations and shared experiences from experts at AWS Vietnam, Renova Cloud, Cloud Kinetics, and engineers currently working in Cloud and Generative AI.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+Key topics included:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+### 3.1. Overview of Cloud Computing and Generative AI
+Speakers introduced the robust growth of Cloud Computing in the era of digital transformation. Cloud services now go beyond basic data storage, providing comprehensive platforms to deploy applications, analyze data, manage security, and implement AI.
 
-#### Domain-Driven Design (DDD)
+Furthermore, Generative AI was recognized as a game-changing technology impacting various sectors such as software development, customer service, education, finance, and healthcare.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+### 3.2. Career Trends in the Cloud Sector
+The panels discussed the increasing hiring demand for roles including:
+* Cloud Engineer
+* Cloud Architect
+* DevOps Engineer
+* Data Engineer
+* Solutions Architect
+* AI Engineer
 
-#### Event-Driven Architecture
+To meet the requirements of employers, students need to build solid foundational knowledge in computer networks, operating systems, programming, databases, and cloud services. Beside technical skills, communication, teamwork, problem-solving, and self-learning abilities are highly valued.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### 3.3. From University Lectures to Business Reality
+One of the most impressive sharing sessions was a personal journey from being a student to becoming a Data Engineer. The speaker emphasized that university education provides a crucial foundation; however, to meet job demands, students must proactively engage in real-world projects, build personal portfolios, acquire professional certifications, and constantly stay updated with new technologies.
 
-#### Compute Evolution
+### 3.4. Fireside Chat Discussion
+The discussion focused on developing high-quality tech talent in Vietnam. Experts shared their experiences working in international environments, the key skills companies search for, and the learning paths for students pursuing Cloud and AI fields.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+![Event Session](/images/4-EventParticipated/4.1-Event1/event_session.jpg)
 
-#### Amazon Q Developer
+---
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+## 4. Gained Knowledge and Experience
 
-### Key Takeaways
+Participating in the program has helped me gain several insights and practical experiences, such as:
+* Better understanding the role of Cloud Computing in enterprise digital transformation.
+* Grasping development trends of Generative AI and its real-world applications.
+* Discovering common career positions in the Cloud sector and the skills needed to prepare.
+* Recognizing the importance of learning by doing through practical projects.
+* Realizing that continuous learning and staying updated with technology are essential for an IT engineer.
 
-#### Design Mindset
+---
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+## 5. Personal Reflection
 
-#### Technical Architecture
+As an Information Technology student, I find the knowledge shared in this event highly relevant and practical to my own career path.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+Currently, I am developing the **Enterprise Asset Management System (EAM Workspace)**, which utilizes modern cloud technologies like storing files on Amazon S3, sending emails via Amazon SES, and implementing web-based data management features. After attending the Study Tour, I understand better how Cloud services are applied in enterprises, and the importance of designing systems for scalability, security, and cost optimization.
 
-#### Modernization Strategy
+In addition to completing my university courses, I plan to dive deeper into AWS, DevOps, Docker, Kubernetes, and prepare for AWS certifications to enhance my professional capabilities and meet future recruitment requirements.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+![Event Hall](/images/4-EventParticipated/4.1-Event1/event_hall.jpg)
 
-### Applying to Work
+---
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+## 6. Conclusion
 
-### Event Experience
+Study Tour: **AWS — Enterprise Cloud Architectures & Industry Applications** is an educational and inspiring event that provides practical knowledge and a comprehensive view of the cloud computing industry and modern technology trends.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Through the program, I was not only updated on the latest tech but also had the chance to interact with experts, understand enterprise expectations, and clarify my future learning and career development path.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+This was a meaningful experience that helped me enhance my technical knowledge, expand my mindset, and motivate myself to keep learning, researching, and growing in the IT field.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![Study Tour Group Crop](/images/4-EventParticipated/4.1-Event1/study_tour_group_crop.png)

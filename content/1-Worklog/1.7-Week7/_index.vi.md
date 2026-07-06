@@ -5,55 +5,35 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Trong tuần thứ bảy, nội dung thực tập chuyển sang kết hợp giữa việc phát triển dự án **EAM Workspace** và tiếp tục nghiên cứu các dịch vụ AWS. Trọng tâm là triển khai các **API CRUD** phục vụ các màn hình quản trị, bổ sung chức năng **lọc tài sản** theo nhiều tiêu chí và tìm hiểu nhóm **dịch vụ Networking trên AWS** để hỗ trợ việc triển khai hệ thống trong các giai đoạn tiếp theo.
 
 ### Mục tiêu tuần 7:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai các API CRUD phục vụ hệ thống quản trị.
+* Hoàn thiện chức năng lọc dữ liệu tài sản theo nhiều tiêu chí.
+* Tìm hiểu các dịch vụ Networking trên AWS.
+* Chuẩn bị nền tảng cho việc tích hợp và triển khai ứng dụng.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Phân tích yêu cầu của các màn hình quản trị trong dự án **EAM Workspace**.<br>- Xác định các API CRUD cần triển khai để phục vụ quản lý dữ liệu.<br>+ Chuẩn bị cấu trúc API và tài liệu liên quan. | 29/05/2026 | 29/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 7** | - Triển khai các API CRUD phục vụ các chức năng quản lý tài sản.<br>- Kiểm tra khả năng thêm, sửa, xóa và truy vấn dữ liệu.<br>+ Đảm bảo API đáp ứng yêu cầu của các màn hình quản trị. | 30/05/2026 | 30/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Chủ nhật** | - Bổ sung chức năng lọc tài sản theo **danh mục**, **phòng ban**, **trạng thái**, **từ khóa** và **nhân viên được chỉ định** (nếu khả thi).<br>- Kiểm thử kết quả lọc trên các trường hợp khác nhau.<br>+ Điều chỉnh API để tối ưu truy vấn dữ liệu. | 31/05/2026 | 31/05/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 2** | - Tìm hiểu nhóm **AWS Networking Services** và vai trò trong triển khai hệ thống.<br>- Nghiên cứu các dịch vụ như Amazon VPC, Route 53 và Elastic Load Balancer ở mức tổng quan.<br>+ Ghi chú khả năng áp dụng vào dự án. | 01/06/2026 | 01/06/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - Tiếp tục hoàn thiện các API CRUD và chức năng lọc dữ liệu.<br>- Kiểm thử việc tích hợp API với giao diện quản trị.<br>+ Xử lý các lỗi phát sinh trong quá trình kiểm thử. | 02/06/2026 | 02/06/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 4** | - Tổng hợp kết quả triển khai API và đánh giá hiệu năng truy vấn dữ liệu.<br>- Ôn tập kiến thức về dịch vụ Networking trên AWS.<br>+ Hoàn thiện tài liệu ghi chú và báo cáo công việc. | 03/06/2026 | 03/06/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 5** | - Kiểm tra tổng thể các chức năng đã triển khai trong tuần.<br>- Đánh giá khả năng mở rộng của API và chuẩn bị kế hoạch cho các chức năng tiếp theo.<br>+ Tổng hợp nội dung phục vụ báo cáo thực tập. | 04/06/2026 | 04/06/2026 | Project source code, Team discussion, <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 7:
+* Triển khai các **API CRUD** đáp ứng nhu cầu của các màn hình quản trị trong dự án **EAM Workspace**.
+* Hoàn thiện chức năng **lọc tài sản** theo danh mục, phòng ban, trạng thái, từ khóa và nhân viên được chỉ định (khi đáp ứng điều kiện nghiệp vụ).
+* Kiểm thử và tích hợp thành công API với giao diện quản trị.
+* Hiểu được vai trò của các **dịch vụ Networking trên AWS** trong việc xây dựng và triển khai hệ thống.
+* Có nền tảng để tiếp tục phát triển các chức năng nâng cao và chuẩn bị triển khai ứng dụng trên môi trường AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Tiếp tục phát triển các chức năng còn lại của hệ thống EAM Workspace.
+* Tối ưu API, cải thiện hiệu năng truy vấn và xử lý dữ liệu.
+* Nghiên cứu thêm các dịch vụ AWS hỗ trợ triển khai, giám sát và bảo mật ứng dụng nhằm phục vụ giai đoạn triển khai thực tế.
 
 

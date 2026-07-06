@@ -5,53 +5,33 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+During the eighth week, the internship content focused on developing advanced features for the **EAM Workspace** project to improve user experience and optimize business workflows. The implemented features included **electronic signatures**, **processing progress tracking**, **CSAT (Customer Satisfaction) evaluation**, **FAQ (Frequently Asked Questions)**, **PDF/Excel report exports**, as well as the integration of **Gemini AI** and a **live chat with admins** feature to support users.
 
 ### Week 8 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy electronic signature functionality in the system.
+* Build utilities to track and evaluate request processing.
+* Complete PDF and Excel data export capabilities.
+* Integrate Gemini AI and the live chat with admins feature.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| **Fri** | - Analyze requirements and implement **electronic signature** functionality.<br>- Support uploading signature images and storing signature metadata.<br>+ Verify signature rendering on forms. | 05/06/2026 | 05/06/2026 | Project source code, Team discussion |
+| **Sat** | - Build a **progress tracker** for request processing.<br>- Display execution status and support processing pending signatures.<br>+ Test real-time status update flow. | 06/06/2026 | 06/06/2026 | Project source code, Team discussion |
+| **Sun** | - Implement **CSAT (Customer Satisfaction) evaluation** after request completion.<br>- Build a **Frequently Asked Questions (FAQ)** section for user self-service.<br>+ Test evaluation forms and FAQ content. | 07/06/2026 | 07/06/2026 | Project source code, Team discussion |
+| **Mon** | - Implement **PDF and Excel data export** for reports and lists.<br>- Verify format and data accuracy after export.<br>+ Finalize report export interface. | 08/06/2026 | 08/06/2026 | Project source code, Team discussion |
+| **Tue** | - Integrate **Gemini AI** into the user support dialog.<br>- Build a chatbot interface to receive and answer common questions.<br>+ Test the response capability of the AI system. | 09/06/2026 | 09/06/2026 | Project source code, Team discussion |
+| **Wed** | - Implement **live chat with admins** functionality.<br>- Test sending, receiving, and displaying messages between users and admins.<br>+ Finalize the user interface and resolve issues identified during testing. | 10/06/2026 | 10/06/2026 | Project source code, Team discussion |
+| **Thu** | - Perform overall validation of all features implemented during the week.<br>- Optimize interfaces and resolve outstanding issues.<br>+ Consolidate results and update documents for the internship report. | 11/06/2026 | 11/06/2026 | Project source code, Team discussion |
 
 ### Week 8 Achievements:
+* Successfully implemented **electronic signature** functionality, supporting uploads and signature utilization in processing workflows.
+* Completed the **progress tracker**, supporting management of pending requests and signatures.
+* Built **CSAT evaluation** and **self-service FAQs**, helping enhance user experience.
+* Implemented **PDF and Excel report exports** for management and statistical purposes.
+* Integrated **Gemini AI** into the support dialog and deployed the **live chat with admins** feature, improving user support capabilities in the system.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Plan for the Next Week:
+* Continue optimizing performance and user interfaces of the implemented features.
+* Test integration of the entire system and resolve any arising issues.
+* Finalize the remaining features of the **EAM Workspace** project and prepare for acceptance testing and deployment.

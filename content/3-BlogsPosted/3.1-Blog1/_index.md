@@ -1,31 +1,27 @@
 ---
-title: "Blog 1"
+title: "Amazon EKS Supports Control Plane Egress Routing Through VPC"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Amazon EKS Supports Kubernetes Control Plane Egress Routing Through VPC
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+Hello everyone in AWS Study Group VN! While exploring Containers on AWS, I discovered that Amazon EKS now officially supports **Customer-routed control plane egress**. This feature allows routing outbound traffic from the Kubernetes Control Plane through your own VPC instead of the default path managed by EKS.
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Previously, when the Kubernetes API Server made outbound calls (e.g., calling an Admission Webhook, querying an OIDC Identity Provider, or calling an Aggregate API Server), all of this traffic would go through the EKS-managed network path. For organizations in regulated sectors like finance, healthcare, or government, it was very difficult to apply unified security policies, firewalls, VPC routing, and logging.
 
-Key points to know:
+With **Customer-routed control plane egress**, AWS allows routing this "customer-controllable" traffic out via Elastic Network Interfaces (ENIs) located right inside your VPC. This enables you to:
+* Apply Security Groups to control the traffic.
+* Route traffic through AWS Network Firewall.
+* Use VPC Endpoints or PrivateLink.
+* Monitor traffic using VPC Flow Logs.
+* Connect to on-premises systems via AWS Direct Connect.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+![EKS Control Plane Egress](/images/3-BlogsPosted/eks_control_plane_egress.png)
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+### Conclusion:
+The Customer-routed control plane egress feature is a major step forward, making EKS more suitable for enterprises with strict security requirements. Now, you can apply a unified network policy for both the Data Plane and the Control Plane. This is highly valuable knowledge for anyone working with Kubernetes and Security on AWS.
 
-...Image...
-
-...Link...
-
-...Guide...
+**Reference Source:**
+<https://aws.amazon.com/blogs/containers/amazon-eks-now-supports-control-plane-egress-through-your-vpc/>

@@ -6,35 +6,19 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Trong suốt kỳ thực tập kéo dài 12 tuần (từ ngày 17/04/2026 đến ngày 10/07/2026), em đã hoàn thành lộ trình tự học và thực hành điện toán đám mây cùng với việc thiết kế, xây dựng và triển khai dự án **EAM Workspace** (Hệ thống Quản lý Tài sản Doanh nghiệp).
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
+Chi tiết công việc và kết quả đạt được qua từng tuần được ghi nhận dưới đây:
 
-
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
-
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
-
-**Tuần 2:** [Làm công việc A...](1.2-week2/)
-
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
-
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
-
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
-
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
-
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
-
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
-
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
-
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
-
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
-
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+* **Tuần 1:** [Làm quen với AWS và tìm hiểu dự án EAM Workspace](1.1-Week1/)
+* **Tuần 2:** [Thực hành kiến thức mạng VPC, máy chủ EC2 và nhận AWS Credit](1.2-Week2/)
+* **Tuần 3:** [Tìm hiểu dịch vụ lưu trữ Amazon S3 và cơ sở dữ liệu Amazon RDS](1.3-Week3/)
+* **Tuần 4:** [Nghiên cứu các giải pháp Database nâng cao trên AWS](1.4-Week4/)
+* **Tuần 5:** [Tìm hiểu tính sẵn sàng cao với Auto Scaling và Load Balancer](1.5-Week5/)
+* **Tuần 6:** [Quy trình container hóa ứng dụng bằng Docker và Lightsail](1.6-Week6/)
+* **Tuần 7:** [Phát triển các API CRUD và tìm hiểu dịch vụ Networking trên AWS](1.7-Week7/)
+* **Tuần 8:** [Xây dựng các tính năng nâng cao và tích hợp AI cho EAM Workspace](1.8-Week8/)
+* **Tuần 9:** [Thiết kế kiến trúc triển khai hệ thống EAM Workspace trên AWS](1.9-Week9/)
+* **Tuần 10:** [Hoàn thiện sơ đồ phân tích, thiết kế hệ thống và tài liệu kỹ thuật](1.10-Week10/)
+* **Tuần 11:** [Kiểm thử tích hợp, tối ưu hóa API và sửa lỗi toàn hệ thống](1.11-Week11/)
+* **Tuần 12:** [Tổng kết quá trình thực tập, demo sản phẩm và hoàn thiện báo cáo](1.12-Week12/)

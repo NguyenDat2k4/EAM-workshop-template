@@ -5,55 +5,34 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+Trong tuần thứ mười một, công việc tập trung vào việc kiểm thử tích hợp toàn bộ hệ thống EAM Workspace, tối ưu hiệu năng và hoàn thiện các chức năng trước khi nghiệm thu. Đồng thời tiến hành rà soát mã nguồn, xử lý các lỗi phát sinh và cập nhật tài liệu kỹ thuật theo phiên bản cuối của hệ thống.
 
 ### Mục tiêu tuần 11:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Kiểm thử tích hợp toàn bộ hệ thống.
+* Hoàn thiện và tối ưu các chức năng đã triển khai.
+* Rà soát mã nguồn và xử lý các lỗi còn tồn tại.
+* Chuẩn bị hệ thống cho giai đoạn nghiệm thu.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **Thứ 6** | - Kiểm thử tổng thể các chức năng của hệ thống EAM Workspace.<br>- Đánh giá luồng xử lý giữa Frontend, Backend và cơ sở dữ liệu.<br>+ Ghi nhận các lỗi cần khắc phục. | 26/06/2026 | 26/06/2026 | Project source code, Team discussion |
+| **Thứ 7** | - Khắc phục các lỗi phát sinh trong quá trình kiểm thử.<br>- Điều chỉnh giao diện và cải thiện trải nghiệm người dùng.<br>+ Kiểm tra lại các chức năng sau khi sửa lỗi. | 27/06/2026 | 27/06/2026 | Project source code, Team discussion |
+| **Chủ nhật** | - Tối ưu hiệu năng các API và truy vấn cơ sở dữ liệu.<br>- Rà soát việc xử lý dữ liệu và các quy tắc nghiệp vụ.<br>+ Đảm bảo hệ thống hoạt động ổn định. | 28/06/2026 | 28/06/2026 | Project source code, Team discussion |
+| **Thứ 2** | - Kiểm thử các chức năng xuất PDF, Excel, chữ ký điện tử và chatbot AI.<br>- Đánh giá tính ổn định của các tính năng tích hợp.<br>+ Hoàn thiện các chức năng còn thiếu. | 29/06/2026 | 29/06/2026 | Project source code, Team discussion |
+| **Thứ 3** | - Rà soát cấu trúc mã nguồn và chuẩn hóa quy ước lập trình.<br>- Kiểm tra cấu hình môi trường và các tham số triển khai.<br>+ Cập nhật tài liệu kỹ thuật theo phiên bản mới. | 30/06/2026 | 30/06/2026 | Project source code, Team discussion |
+| **Thứ 4** | - Thực hiện kiểm thử hồi quy (Regression Testing) sau khi hoàn tất các chỉnh sửa.<br>- Đánh giá khả năng hoạt động ổn định của toàn bộ hệ thống.<br>+ Tổng hợp kết quả kiểm thử. | 01/07/2026 | 01/07/2026 | Project source code, Team discussion |
+| **Thứ 5** | - Hoàn thiện tài liệu kỹ thuật và cập nhật nhật ký phát triển dự án.<br>- Chuẩn bị nội dung báo cáo và kế hoạch nghiệm thu hệ thống.<br>+ Tổng hợp kết quả thực hiện trong tuần. | 02/07/2026 | 02/07/2026 | Project source code, Team discussion |
 
 ### Kết quả đạt được tuần 11:
+* Hoàn thành kiểm thử tích hợp các chức năng chính của hệ thống EAM Workspace.
+* Khắc phục các lỗi phát sinh và tối ưu hiệu năng của hệ thống.
+* Hoàn thiện mã nguồn và chuẩn hóa tài liệu kỹ thuật.
+* Đảm bảo hệ thống hoạt động ổn định, sẵn sàng cho quá trình nghiệm thu và báo cáo thực tập.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kế hoạch tuần tiếp theo:
+* Tổng kết toàn bộ quá trình thực tập và hoàn thiện báo cáo.
+* Chuẩn bị slide thuyết trình và demo hệ thống.
+* Rà soát lần cuối tài liệu, mã nguồn và các sản phẩm bàn giao trước khi kết thúc kỳ thực tập.
 
 
