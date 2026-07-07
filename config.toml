@@ -1,5 +1,5 @@
 baseURL = "https://nguyendat2k4.github.io/EAM-workshop-template/"
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
 
