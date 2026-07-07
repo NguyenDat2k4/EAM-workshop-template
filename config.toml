@@ -1,6 +1,6 @@
 baseURL = "https://nguyendat2k4.github.io/EAM-workshop-template/"
 relativeURLs = false
-canonifyURLs = false
+canonifyURLs = true
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
