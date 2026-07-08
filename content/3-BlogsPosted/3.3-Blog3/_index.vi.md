@@ -112,3 +112,8 @@ Mặc dù hiện nay AWS Continuum vẫn đang ở giai đoạn được giới 
 Nếu doanh nghiệp của bạn đang quan tâm đến việc nâng cao hiệu quả quản lý lỗ hổng, tối ưu quy trình DevSecOps và ứng dụng AI vào bảo mật, AWS Continuum là một công nghệ rất đáng theo dõi trong thời gian tới.
 
 **Tham khảo:** <https://aws.amazon.com/vi/blogs/security/introducing-aws-continuum-security-at-machine-speed/>
+
+---
+
+### Minh chứng đã đăng
+![AWS Study Group VN Post](/images/3-BlogsPosted/blog3_facebook_post.png)

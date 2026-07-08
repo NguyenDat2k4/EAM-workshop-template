@@ -111,3 +111,8 @@ Although AWS Continuum is currently in the technology initiative stage, this app
 If your organization is interested in enhancing vulnerability management efficiency, optimizing DevSecOps workflows, and applying AI to security, AWS Continuum is a highly valuable technology to watch.
 
 **Reference Source:** <https://aws.amazon.com/blogs/security/introducing-aws-continuum-security-at-machine-speed/>
+
+---
+
+### Proof of Posting
+![AWS Study Group VN Post](/images/3-BlogsPosted/blog3_facebook_post.png)
