@@ -30,3 +30,10 @@ The combination of Amazon EKS Auto Mode and Istio Ambient Mesh delivers a modern
 
 **Reference Source:**
 <https://aws.amazon.com/blogs/containers/better-together-amazon-eks-auto-mode-and-istio-ambient-mesh/>
+
+---
+
+### Proof of Posting
+- **Facebook Post Link:** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2193364788095148/>
+
+![AWS Study Group VN Post](/images/3-BlogsPosted/blog2_facebook_post.png)
