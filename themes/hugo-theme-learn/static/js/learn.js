@@ -392,13 +392,27 @@ jQuery(window).on("load", function () {
     adjustForScrollbar();
   });
 
+  function normalizeUrl(url) {
+    if (!url) return '';
+    var path = url.replace(/^https?:\/\/[^\/]+/, '');
+    path = path.replace(/^\/EAM-workshop-template/, '');
+    if (path.indexOf('/') !== 0) {
+      path = '/' + path;
+    }
+    return path;
+  }
+
   // store this page in session
-  sessionStorage.setItem(jQuery("body").data("url"), 1);
+  var currentUrl = jQuery("body").data("url");
+  if (currentUrl) {
+    sessionStorage.setItem(normalizeUrl(currentUrl), 1);
+  }
 
   // loop through the sessionStorage and see if something should be marked as visited
   for (var url in sessionStorage) {
-    if (sessionStorage.getItem(url) == 1)
-      jQuery('[data-nav-id="' + url + '"]').addClass("visited");
+    if (sessionStorage.getItem(url) == 1) {
+      jQuery('[data-nav-id="' + normalizeUrl(url) + '"]').addClass("visited");
+    }
   }
 
   $(".highlightable").highlight(sessionStorage.getItem("search-value"), {
