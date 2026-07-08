@@ -56,7 +56,7 @@ backend-eb-source.zip
 
 Không đưa `.env`, `node_modules` hoặc secret thật vào file ZIP.
 
-![Backend source bundle đúng cấu trúc để deploy lên Elastic Beanstalk](/eam-workshop-report/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.1-source-bundle.png)
+![Backend source bundle đúng cấu trúc để deploy lên Elastic Beanstalk](/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.1-source-bundle.png)
 
 *Hình 5.4.1. Backend source bundle đúng cấu trúc để deploy lên Elastic Beanstalk.*
 
@@ -77,7 +77,7 @@ Mở Elastic Beanstalk console:
 
 Nếu environment cũ bị kẹt ở trạng thái `Severe`, `No Data`, `CREATE_FAILED` hoặc `DELETE_FAILED`, có thể tạo environment mới và trỏ về cùng RDS để giảm thời gian xử lý.
 
-![Trang tạo Elastic Beanstalk environment cho backend](/eam-workshop-report/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.2-create-eb-environment.png)
+![Trang tạo Elastic Beanstalk environment cho backend](/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.2-create-eb-environment.png)
 
 *Hình 5.4.2. Trang tạo Elastic Beanstalk environment cho backend.*
 
@@ -111,7 +111,7 @@ FRONTEND_ORIGINS=https://<amplify-domain>
 
 `FRONTEND_ORIGIN` và `FRONTEND_ORIGINS` có thể cập nhật sau khi Amplify tạo URL frontend.
 
-![Environment properties của Elastic Beanstalk](/eam-workshop-report/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.3-eb-env-properties.png)
+![Environment properties của Elastic Beanstalk](/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.3-eb-env-properties.png)
 
 *Hình 5.4.3. Environment properties của Elastic Beanstalk sau khi che thông tin nhạy cảm.*
 
@@ -137,13 +137,13 @@ Kết quả mong đợi:
 }
 ```
 
-![Elastic Beanstalk environment ở trạng thái OK](/eam-workshop-report/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.4-eb-health-ok.png)
+![Elastic Beanstalk environment ở trạng thái OK](/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.4-eb-health-ok.png)
 
 *Hình 5.4.4. Elastic Beanstalk environment ở trạng thái OK.*
 
 Màn hình này cần hiển thị environment health ở trạng thái OK. Đây là dấu hiệu Elastic Beanstalk đã provision tài nguyên và backend không gặp lỗi startup nghiêm trọng.
 
-![Health endpoint của backend trên Elastic Beanstalk](/eam-workshop-report/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.5-eb-health-endpoint.png)
+![Health endpoint của backend trên Elastic Beanstalk](/images/5-Workshop/5.4-Backend-Elastic-Beanstalk/5.4.5-eb-health-endpoint.png)
 
 *Hình 5.4.5. Health endpoint của backend trên Elastic Beanstalk trả kết quả thành công.*
 

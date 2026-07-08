@@ -55,7 +55,7 @@ Các bước thực hiện:
 
 Nếu vẫn cần giữ frontend để trình bày báo cáo, có thể tạm thời chưa xóa Amplify, nhưng cần ghi chú rằng tài nguyên này vẫn còn tồn tại.
 
-![Amplify app cleanup](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.1-amplify-cleanup.png)
+![Amplify app cleanup](/images/5-Workshop/5.7-Cleanup/5.7.1-amplify-cleanup.png)
 
 *Hình 5.7.1. AWS Amplify app `quanlidoanhnghiep` và branch `aws-architecture` được kiểm tra trước khi cleanup. Ảnh này ghi nhận frontend đã được deploy thành công, có domain Amplify đang hoạt động và là tài nguyên cần xử lý nếu không tiếp tục duy trì bản demo.*
 
@@ -81,7 +81,7 @@ Các bước thực hiện:
 
 Sau khi xóa API Gateway, các URL dạng `https://...execute-api.ap-southeast-1.amazonaws.com/...` sẽ không còn hoạt động.
 
-![API Gateway cleanup](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.2-api-gateway-cleanup.png)
+![API Gateway cleanup](/images/5-Workshop/5.7-Cleanup/5.7.2-api-gateway-cleanup.png)
 
 *Hình 5.7.2. HTTP API `eam-backend-http-api` trong Amazon API Gateway trước khi xóa. Màn hình này giúp xác nhận đúng API public endpoint của backend, tránh xóa nhầm API không thuộc project.*
 
@@ -109,7 +109,7 @@ Các bước thực hiện:
 
 Nếu Elastic Beanstalk chưa terminate được do dependency, cần kiểm tra thêm security group, load balancer hoặc EC2 resource liên quan.
 
-![Elastic Beanstalk cleanup](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.3-eb-cleanup.png)
+![Elastic Beanstalk cleanup](/images/5-Workshop/5.7-Cleanup/5.7.3-eb-cleanup.png)
 
 *Hình 5.7.3. Elastic Beanstalk environment `eam-backend-prod-v8` trước khi terminate. Ảnh thể hiện environment backend đang ở trạng thái hoạt động ổn định, có domain riêng và là tài nguyên có thể phát sinh chi phí nếu tiếp tục chạy.*
 
@@ -137,7 +137,7 @@ Các bước thực hiện:
 
 Nếu chưa muốn xóa RDS ngay, cần tạm dừng database nếu phù hợp và tiếp tục theo dõi chi phí trong Billing.
 
-![RDS cleanup](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.4-rds-cleanup.png)
+![RDS cleanup](/images/5-Workshop/5.7-Cleanup/5.7.4-rds-cleanup.png)
 
 *Hình 5.7.4. Amazon RDS database `eam-mysql` được kiểm tra trước khi cleanup. Đây là tài nguyên cần chú ý vì database instance vẫn có thể phát sinh chi phí khi còn ở trạng thái available.*
 
@@ -163,7 +163,7 @@ Các bước thực hiện:
 
 Nếu vẫn giữ SES để tiếp tục demo chức năng email, cần bảo quản credential cẩn thận và không commit vào GitHub.
 
-![SES cleanup](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.5-ses-cleanup.png)
+![SES cleanup](/images/5-Workshop/5.7-Cleanup/5.7.5-ses-cleanup.png)
 
 *Hình 5.7.5. Amazon SES email identity đã được xác thực tại region Singapore. Ảnh này dùng để ghi nhận cấu hình gửi email/OTP của backend, đồng thời nhắc rằng SMTP credential cần được quản lý riêng và không đưa thông tin nhạy cảm vào báo cáo.*
 
@@ -203,7 +203,7 @@ Các bước thực hiện:
 
 Các tài nguyên cần chú ý nhất về chi phí gồm RDS database, EC2/Elastic Beanstalk, Load Balancer, NAT Gateway, Elastic IP và CloudWatch Logs.
 
-![Billing check](/eam-workshop-report/images/5-Workshop/5.7-Cleanup/5.7.6-billing-check.png)
+![Billing check](/images/5-Workshop/5.7-Cleanup/5.7.6-billing-check.png)
 
 *Hình 5.7.6. Billing and Cost Management được dùng để theo dõi chi phí sau quá trình triển khai AWS. Màn hình Cost summary và Cost breakdown giúp kiểm tra các khoản phát sinh theo dịch vụ như RDS, EC2, VPC và Amplify.*
 
