@@ -115,4 +115,6 @@ If your organization is interested in enhancing vulnerability management efficie
 ---
 
 ### Proof of Posting
+- **Facebook Post Link:** <https://www.facebook.com/share/p/1DxVd4EjWE/>
+
 ![AWS Study Group VN Post](/images/3-BlogsPosted/blog3_facebook_post.png)

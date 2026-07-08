@@ -116,4 +116,6 @@ Nếu doanh nghiệp của bạn đang quan tâm đến việc nâng cao hiệu 
 ---
 
 ### Minh chứng đã đăng
+- **Đường dẫn bài viết Facebook:** <https://www.facebook.com/share/p/1DxVd4EjWE/>
+
 ![AWS Study Group VN Post](/images/3-BlogsPosted/blog3_facebook_post.png)
