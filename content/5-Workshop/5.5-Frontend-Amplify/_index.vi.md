@@ -35,19 +35,19 @@ Endpoint API Gateway sẽ có dạng:
 https://<api-id>.execute-api.<region>.amazonaws.com
 ```
 
-![Tổng quan HTTP API trong Amazon API Gateway](/images/5-Workshop/5.5-Frontend-Amplify/5.5.1-api-gateway-overview.png)
+![Tổng quan HTTP API trong Amazon API Gateway](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.1-api-gateway-overview.png)
 
 *Hình 5.5.1. Tổng quan HTTP API trong Amazon API Gateway.*
 
 API cần được tạo đúng tên và có endpoint public. Endpoint này sẽ được dùng trong Amplify rewrite để chuyển tiếp các request `/api/*` và `/uploads/*`.
 
-![Route proxy của API Gateway](/images/5-Workshop/5.5-Frontend-Amplify/5.5.2-api-gateway-route.png)
+![Route proxy của API Gateway](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.2-api-gateway-route.png)
 
 *Hình 5.5.2. Route `ANY /{proxy+}` của API Gateway.*
 
 Tại phần Routes, cần đảm bảo route `ANY /{proxy+}` đã được tạo. Route này giúp API Gateway nhận mọi path cần chuyển đến backend, bao gồm `/api/health`, `/api/assets` và `/uploads/...`.
 
-![Integration của API Gateway trỏ đến Elastic Beanstalk](/images/5-Workshop/5.5-Frontend-Amplify/5.5.3-api-gateway-integration.png)
+![Integration của API Gateway trỏ đến Elastic Beanstalk](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.3-api-gateway-integration.png)
 
 *Hình 5.5.3. Integration của API Gateway trỏ đến Elastic Beanstalk backend.*
 
@@ -70,7 +70,7 @@ Nếu trả 404, kiểm tra lại:
 - Backend phải nhận đúng đường dẫn gốc như `/api/health`, `/api/auth/login` hoặc `/api/assets`.
 - Integration URI có thể dùng `http://<elastic-beanstalk-domain>/{proxy}` khi route có biến `{proxy+}`.
 
-![Health endpoint qua API Gateway](/images/5-Workshop/5.5-Frontend-Amplify/5.5.4-api-gateway-health.png)
+![Health endpoint qua API Gateway](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.4-api-gateway-health.png)
 
 *Hình 5.5.4. Health endpoint qua API Gateway trả kết quả thành công.*
 
@@ -114,9 +114,9 @@ applications:
           - '**/*'
 ```
 
-![Build settings của Amplify](/images/5-Workshop/5.5-Frontend-Amplify/5.5.6-amplify-build-settings.png)
+![Build settings của Amplify](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.5-amplify-build-settings.png)
 
-*Hình 5.5.6. Build settings của Amplify với app root và output directory.*
+*Hình 5.5.5. Build settings của Amplify với app root và output directory.*
 
 Build settings cần khớp với cấu trúc project: `appRoot` là `frontend`, build command là `npm ci && npm run build` và output directory là `dist`.
 
@@ -140,15 +140,15 @@ npm ci && npm run build
 dist
 ```
 
-![Amplify app kết nối branch aws-architecture](/images/5-Workshop/5.5-Frontend-Amplify/5.5.5-amplify-branch.png)
+![Amplify app kết nối branch aws-architecture](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.6-amplify-branch.png)
 
-*Hình 5.5.5. Amplify app kết nối đúng branch triển khai.*
+*Hình 5.5.6. Amplify app kết nối đúng branch triển khai.*
 
 Branch deploy phải là branch chứa source frontend mới nhất. Sau khi kết nối, Amplify sẽ tự động build và publish frontend theo cấu hình đã chọn.
 
-![Amplify deployment thành công](/images/5-Workshop/5.5-Frontend-Amplify/5.5.8-amplify-build-success.png)
+![Amplify deployment thành công](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.7-amplify-build-success.png)
 
-*Hình 5.5.8. Amplify deployment thành công.*
+*Hình 5.5.7. Amplify deployment thành công.*
 
 Khi deployment ở trạng thái `Deployed`, frontend đã được build và xuất bản thành công trên Amplify domain. Đây là điều kiện trước khi kiểm thử giao diện và rewrite API.
 
@@ -185,9 +185,9 @@ Sau đó giữ SPA fallback rule cho React Router:
 
 Nếu rule `/api/<*>` hoặc `/uploads/<*>` đặt sai thứ tự, request API hoặc ảnh upload có thể bị trả về HTML của frontend, gây lỗi `404`, lỗi ảnh không hiển thị hoặc static assets bị lỗi MIME type.
 
-![Rewrite rules của Amplify](/images/5-Workshop/5.5-Frontend-Amplify/5.5.7-amplify-rewrite-rules.png)
+![Rewrite rules của Amplify](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.8-amplify-rewrite-rules.png)
 
-*Hình 5.5.7. Rewrite rules của Amplify chuyển tiếp `/api/<*>` và `/uploads/<*>` đến API Gateway.*
+*Hình 5.5.8. Rewrite rules của Amplify chuyển tiếp `/api/<*>` và `/uploads/<*>` đến API Gateway.*
 
 Hai rule `/api/<*>` và `/uploads/<*>` phải nằm phía trên rule fallback `/index.html`. Thứ tự này đảm bảo request API và file upload đi đến API Gateway thay vì bị React Router xử lý như route frontend.
 
@@ -224,7 +224,7 @@ Ghi lại:
 - Trạng thái frontend build.
 - Kết quả test `https://<amplify-domain>/api/health`.
 
-![Health endpoint qua Amplify domain](/images/5-Workshop/5.5-Frontend-Amplify/5.5.9-amplify-health.png)
+![Health endpoint qua Amplify domain](/eam-workshop-report/images/5-Workshop/5.5-Frontend-Amplify/5.5.9-amplify-health.png)
 
 *Hình 5.5.9. Health endpoint qua Amplify domain trả kết quả thành công.*
 

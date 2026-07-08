@@ -31,7 +31,7 @@ Dùng một VPC cố định cho Elastic Beanstalk và RDS. VPC nên có:
 
 Nếu workshop chỉ phục vụ demo ngắn hạn, có thể dùng cấu hình đơn giản hơn so với kiến trúc production nhiều subnet.
 
-![VPC được sử dụng cho Elastic Beanstalk và RDS](/images/5-Workshop/5.3-Network-RDS/5.3.1-vpc-subnets.png)
+![VPC được sử dụng cho Elastic Beanstalk và RDS](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.1-vpc-subnets.png)
 
 *Hình 5.3.1. VPC được sử dụng cho Elastic Beanstalk và RDS.*
 
@@ -48,13 +48,13 @@ Tạo hoặc kiểm tra các security group sau:
 
 Điểm quan trọng nhất là RDS không nên mở `3306` cho toàn bộ Internet. Chỉ cho phép backend security group truy cập database.
 
-![Security group của backend Elastic Beanstalk](/images/5-Workshop/5.3-Network-RDS/5.3.2-backend-security-group.png)
+![Security group của backend Elastic Beanstalk](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.2-backend-security-group.png)
 
 *Hình 5.3.2. Security group của backend Elastic Beanstalk.*
 
 Security group ID của backend cần được ghi lại để dùng làm source cho rule inbound của RDS.
 
-![Security group của RDS cho phép backend truy cập MySQL](/images/5-Workshop/5.3-Network-RDS/5.3.3-rds-security-group.png)
+![Security group của RDS cho phép backend truy cập MySQL](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.3-rds-security-group.png)
 
 *Hình 5.3.3. Security group của RDS cho phép backend truy cập port 3306.*
 
@@ -86,7 +86,7 @@ enterprise_asset_management
 
 Chờ database chuyển sang trạng thái **Available**.
 
-![RDS database ở trạng thái Available](/images/5-Workshop/5.3-Network-RDS/5.3.4-rds-available.png)
+![RDS database ở trạng thái Available](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.4-rds-available.png)
 
 *Hình 5.3.4. RDS database ở trạng thái Available.*
 
@@ -108,7 +108,7 @@ Tạo backend `DATABASE_URL`:
 DATABASE_URL=mysql://asset_app:<password>@<rds-endpoint>:3306/enterprise_asset_management
 ```
 
-![Thông tin kết nối và security của RDS](/images/5-Workshop/5.3-Network-RDS/5.3.5-rds-connectivity.png)
+![Thông tin kết nối và security của RDS](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.5-rds-connectivity.png)
 
 *Hình 5.3.5. Thông tin kết nối và security của RDS.*
 

@@ -28,7 +28,7 @@ Use one AWS Region for all workshop resources. The IAM user or role should be ab
 
 After selecting the Region, check the top-right corner of the AWS Console to ensure all actions are performed in the same Region.
 
-![AWS Region used for the workshop](/images/5-Workshop/5.2-Prerequisites/5.2.1-aws-region.png)
+![AWS Region used for the workshop](/eam-workshop-report/images/5-Workshop/5.2-Prerequisites/5.2.1-aws-region.png)
 
 *Figure 5.2.1. AWS Region used for the workshop.*
 
@@ -38,7 +38,7 @@ The selected Region should be the Region used throughout the workshop. Keeping o
 
 Before connecting AWS Amplify, identify the GitHub branch used for frontend deployment.
 
-![GitHub branch used for Amplify frontend deployment](/images/5-Workshop/5.2-Prerequisites/5.2.2-github-branch.png)
+![GitHub branch used for Amplify frontend deployment](/eam-workshop-report/images/5-Workshop/5.2-Prerequisites/5.2.2-github-branch.png)
 
 *Figure 5.2.2. GitHub branch used for Amplify frontend deployment.*
 
@@ -65,7 +65,7 @@ npm -v
 
 The result should show the installed Node.js and npm versions on the local machine.
 
-![Checking Node.js and npm on the local machine](/images/5-Workshop/5.2-Prerequisites/5.2.3-local-tools.png)
+![Checking Node.js and npm on the local machine](/eam-workshop-report/images/5-Workshop/5.2-Prerequisites/5.2.3-local-tools.png)
 
 *Figure 5.2.3. Checking Node.js and npm on the local machine.*
 

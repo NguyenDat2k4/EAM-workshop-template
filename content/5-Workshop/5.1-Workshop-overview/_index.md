@@ -66,7 +66,7 @@ graph TD
 
 Before configuring each service, review the overall connection flow of the system.
 
-![Workshop architecture overview for EAM Workspace](/images/5-Workshop/5.1-Workshop-overview/5.1.1-architecture-overview.png)
+![Workshop architecture overview for EAM Workspace](/eam-workshop-report/images/5-Workshop/5.1-Workshop-overview/5.1.1-architecture-overview.png)
 
 *Figure 5.1.1. Workshop architecture overview.*
 
@@ -76,7 +76,7 @@ This diagram confirms the main architecture components: the frontend is served t
 
 After reviewing the architecture, map each component in the diagram to the AWS services used in the workshop.
 
-![AWS services overview used in the workshop](/images/5-Workshop/5.1-Workshop-overview/5.1.2-aws-services-overview.png)
+![AWS services overview used in the workshop](/eam-workshop-report/images/5-Workshop/5.1-Workshop-overview/5.1.2-aws-services-overview.png)
 
 *Figure 5.1.2. AWS services overview used in the workshop.*
 

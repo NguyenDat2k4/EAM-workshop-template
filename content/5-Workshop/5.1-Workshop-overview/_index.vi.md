@@ -66,7 +66,7 @@ graph TD
 
 Trước khi bắt đầu cấu hình từng dịch vụ, cần nắm được luồng kết nối tổng thể của hệ thống.
 
-![Sơ đồ kiến trúc tổng quan của workshop EAM Workspace](/images/5-Workshop/5.1-Workshop-overview/5.1.1-architecture-overview.png)
+![Sơ đồ kiến trúc tổng quan của workshop EAM Workspace](/eam-workshop-report/images/5-Workshop/5.1-Workshop-overview/5.1.1-architecture-overview.png)
 
 *Hình 5.1.1. Sơ đồ kiến trúc tổng quan của workshop.*
 
@@ -76,7 +76,7 @@ Trước khi bắt đầu cấu hình từng dịch vụ, cần nắm được l
 
 Sau khi hiểu kiến trúc tổng quan, đối chiếu các thành phần trong sơ đồ với các dịch vụ AWS sẽ được thao tác trong workshop.
 
-![Tổng quan các dịch vụ AWS được sử dụng trong workshop](/images/5-Workshop/5.1-Workshop-overview/5.1.2-aws-services-overview.png)
+![Tổng quan các dịch vụ AWS được sử dụng trong workshop](/eam-workshop-report/images/5-Workshop/5.1-Workshop-overview/5.1.2-aws-services-overview.png)
 
 *Hình 5.1.2. Tổng quan các dịch vụ AWS được sử dụng trong workshop.*
 

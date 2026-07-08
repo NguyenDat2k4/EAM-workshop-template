@@ -31,7 +31,7 @@ Use one VPC for Elastic Beanstalk and RDS. The VPC should have:
 
 For a short demo workshop, the setup can be simpler than a production multi-subnet architecture.
 
-![VPC used by Elastic Beanstalk and RDS](/images/5-Workshop/5.3-Network-RDS/5.3.1-vpc-subnets.png)
+![VPC used by Elastic Beanstalk and RDS](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.1-vpc-subnets.png)
 
 *Figure 5.3.1. VPC used by Elastic Beanstalk and RDS.*
 
@@ -48,13 +48,13 @@ Create or verify these security groups:
 
 The most important rule is that RDS should not open `3306` to the entire Internet. Only the backend security group should be allowed to access the database.
 
-![Elastic Beanstalk backend security group](/images/5-Workshop/5.3-Network-RDS/5.3.2-backend-security-group.png)
+![Elastic Beanstalk backend security group](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.2-backend-security-group.png)
 
 *Figure 5.3.2. Elastic Beanstalk backend security group.*
 
 On the backend security group screen, record the Security group ID because it will be used as the source for the RDS inbound rule.
 
-![RDS security group allowing backend MySQL access](/images/5-Workshop/5.3-Network-RDS/5.3.3-rds-security-group.png)
+![RDS security group allowing backend MySQL access](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.3-rds-security-group.png)
 
 *Figure 5.3.3. RDS security group allowing backend access to port 3306.*
 
@@ -86,7 +86,7 @@ enterprise_asset_management
 
 Wait until the database status becomes **Available**.
 
-![RDS database in Available status](/images/5-Workshop/5.3-Network-RDS/5.3.4-rds-available.png)
+![RDS database in Available status](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.4-rds-available.png)
 
 *Figure 5.3.4. RDS database in Available status.*
 
@@ -108,7 +108,7 @@ Create the backend `DATABASE_URL`:
 DATABASE_URL=mysql://asset_app:<password>@<rds-endpoint>:3306/enterprise_asset_management
 ```
 
-![RDS connectivity and security information](/images/5-Workshop/5.3-Network-RDS/5.3.5-rds-connectivity.png)
+![RDS connectivity and security information](/eam-workshop-report/images/5-Workshop/5.3-Network-RDS/5.3.5-rds-connectivity.png)
 
 *Figure 5.3.5. RDS connectivity and security information.*
 

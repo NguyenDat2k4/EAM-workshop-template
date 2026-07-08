@@ -38,7 +38,7 @@ Nếu lỗi, kiểm tra theo thứ tự: Elastic Beanstalk logs, API Gateway rou
 
 Mở URL Amplify và đăng nhập bằng tài khoản admin từ seed data.
 
-![Trang đăng nhập trên Amplify domain](/images/5-Workshop/5.6-Test-Monitor/5.6.1-login-page.png)
+![Trang đăng nhập trên Amplify domain](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.1-login-page.png)
 
 *Hình 5.6.1. Trang đăng nhập trên Amplify domain.*
 
@@ -51,7 +51,7 @@ Kết quả mong đợi:
 - Sidebar và navigation hoạt động.
 - API call trả `200` hoặc response nghiệp vụ mong đợi.
 
-![Admin dashboard sau khi đăng nhập thành công](/images/5-Workshop/5.6-Test-Monitor/5.6.2-admin-dashboard.png)
+![Admin dashboard sau khi đăng nhập thành công](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.2-admin-dashboard.png)
 
 *Hình 5.6.2. Admin dashboard sau khi đăng nhập thành công.*
 
@@ -72,13 +72,13 @@ Kiểm thử ít nhất một workflow từ mỗi module admin lớn:
 | Inventory | Xem hoặc tạo phiên kiểm kê. |
 | Reports | Mở báo cáo tổng quan hoặc báo cáo tài sản. |
 
-![Màn hình quản lý tài sản](/images/5-Workshop/5.6-Test-Monitor/5.6.3-admin-assets.png)
+![Màn hình quản lý tài sản](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.3-admin-assets.png)
 
 *Hình 5.6.3. Màn hình quản lý tài sản.*
 
 Danh sách tài sản cần hiển thị đúng, đồng thời các thao tác chính như xem, sửa, xóa hoặc nhập Excel phải xuất hiện theo đúng quyền admin.
 
-![Workflow quản lý bàn giao tài sản](/images/5-Workshop/5.6-Test-Monitor/5.6.4-assignment-maintenance.png)
+![Workflow quản lý bàn giao tài sản](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.4-assignment-maintenance.png)
 
 *Hình 5.6.4. Workflow quản lý bàn giao tài sản.*
 
@@ -95,7 +95,7 @@ Danh sách tài sản cần hiển thị đúng, đồng thời các thao tác c
 - Trang FAQ.
 - Trang hồ sơ và lịch sử.
 
-![Employee dashboard](/images/5-Workshop/5.6-Test-Monitor/5.6.5-employee-dashboard.png)
+![Employee dashboard](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.5-employee-dashboard.png)
 
 *Hình 5.6.5. Employee dashboard sau khi đăng nhập.*
 
@@ -110,13 +110,13 @@ Kiểm tra thêm các case đã gặp trong quá trình deploy:
 - Response lỗi inactive trả đúng mã nghiệp vụ, ví dụ `AUTH_ACCOUNT_INACTIVE`.
 - Browser DevTools không có lỗi CORS.
 
-![DevTools Network hiển thị API request thành công](/images/5-Workshop/5.6-Test-Monitor/5.6.6-devtools-network.png)
+![DevTools Network hiển thị API request thành công](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.6-devtools-network.png)
 
 *Hình 5.6.6. DevTools Network hiển thị các API request thành công.*
 
 Tại tab Network, cần lọc các request `/api/...` và kiểm tra status trả về `200` hoặc mã nghiệp vụ mong đợi. Nếu xuất hiện lỗi CORS hoặc request trả HTML, cần kiểm tra lại Amplify rewrite và backend CORS.
 
-![Tài khoản inactive bị chặn đăng nhập](/images/5-Workshop/5.6-Test-Monitor/5.6.7-inactive-account.png)
+![Tài khoản inactive bị chặn đăng nhập](/eam-workshop-report/images/5-Workshop/5.6-Test-Monitor/5.6.7-inactive-account.png)
 
 *Hình 5.6.7. Tài khoản inactive bị chặn đăng nhập.*
 
