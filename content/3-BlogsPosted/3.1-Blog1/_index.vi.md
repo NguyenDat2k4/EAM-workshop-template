@@ -24,3 +24,10 @@ Tính năng Customer-routed control plane egress là một bước tiến lớn 
 
 **Nguồn tham khảo:**
 <https://aws.amazon.com/blogs/containers/amazon-eks-now-supports-control-plane-egress-through-your-vpc/>
+
+---
+
+### Minh chứng đã đăng
+- **Đường dẫn bài viết Facebook:** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2192741078157519/>
+
+![AWS Study Group VN Post](/images/3-BlogsPosted/blog1_facebook_post.png)
