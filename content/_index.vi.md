@@ -25,9 +25,9 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
-
-
+<div style="text-align: center; margin: 25px 0;">
+  <img src="/images/avatar.png" alt="Avatar" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 4px solid #fff;">
+</div>
 
 ### Nội dung báo cáo
 
