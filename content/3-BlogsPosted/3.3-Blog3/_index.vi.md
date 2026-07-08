@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-# AWS Continuum là gì? Công nghệ AI mới giúp phát hiện và xử lý lỗ hổng bảo mật thông minh
 
 Trong bối cảnh các cuộc tấn công mạng ngày càng tinh vi và số lượng lỗ hổng bảo mật không ngừng gia tăng, việc phát hiện và xử lý rủi ro một cách nhanh chóng đã trở thành ưu tiên hàng đầu của nhiều doanh nghiệp. Tuy nhiên, các công cụ bảo mật truyền thống thường chỉ dừng lại ở việc phát hiện lỗ hổng và tạo danh sách cảnh báo, khiến đội ngũ bảo mật phải dành nhiều thời gian để xác minh, đánh giá mức độ ảnh hưởng và lựa chọn phương án xử lý phù hợp.
 

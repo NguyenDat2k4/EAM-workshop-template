@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# Amazon EKS Supports Kubernetes Control Plane Egress Routing Through VPC
 
 Hello everyone in AWS Study Group VN! While exploring Containers on AWS, I discovered that Amazon EKS now officially supports **Customer-routed control plane egress**. This feature allows routing outbound traffic from the Kubernetes Control Plane through your own VPC instead of the default path managed by EKS.
 

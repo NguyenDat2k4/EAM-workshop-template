@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# REPORT ON PARTICIPATING IN AWS FIRST CLOUD JOURNEY COMMUNITY DAY EVENT
 
 ## 1. Event Information
 

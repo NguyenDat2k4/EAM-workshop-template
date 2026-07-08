@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-# Integrating Amazon EKS Auto Mode and Istio Ambient Mesh Architecture
 
 Hello everyone in AWS Study Group VN! While researching Kubernetes, I came across an AWS article introducing the combination of Amazon EKS Auto Mode and Istio Ambient Mesh. These two technologies work together to significantly reduce operational overhead while automatically strengthening service-to-service security.
 

@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-# What is AWS Continuum? New AI Technology Helps Smartly Detect and Handle Security Vulnerabilities
 
 In the context of increasingly sophisticated cyberattacks and a growing number of security vulnerabilities, identifying and mitigating risks quickly has become a top priority for many organizations. However, traditional security tools often stop at discovering vulnerabilities and generating alert lists, forcing security teams to spend considerable time verifying them, assessing their impact, and choosing appropriate remediation options.
 

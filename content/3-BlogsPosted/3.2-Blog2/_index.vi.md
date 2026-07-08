@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-# Kiến trúc tích hợp Amazon EKS Auto Mode và Istio Ambient Mesh
 
 Xin chào mọi người AWS Study Group VN! Trong quá trình tìm hiểu về Kubernetes, mình phát hiện có bài viết AWS giới thiệu cách kết hợp Amazon EKS Auto Mode và Istio Ambient Mesh. Hai công nghệ này “hợp sức” giúp giảm đáng kể operational overhead trong khi vẫn tăng cường bảo mật service-to-service một cách tự động.
 

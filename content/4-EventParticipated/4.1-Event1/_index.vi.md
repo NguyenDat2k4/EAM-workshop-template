@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# BÁO CÁO THAM GIA STUDY TOUR: AWS — ENTERPRISE CLOUD ARCHITECTURES & INDUSTRY APPLICATIONS
 
 ![Study Tour Group](/images/4-EventParticipated/4.1-Event1/study_tour_group.jpg)
 

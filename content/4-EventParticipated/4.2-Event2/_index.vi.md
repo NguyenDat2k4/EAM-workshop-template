@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# BÁO CÁO THAM GIA SỰ KIỆN AWS FIRST CLOUD JOURNEY COMMUNITY DAY
 
 ## 1. Thông tin sự kiện
 

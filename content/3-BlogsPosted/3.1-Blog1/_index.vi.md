@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# Amazon EKS hỗ trợ định tuyến lưu lượng egress của Kubernetes Control Plane qua VPC
 
 Xin chào mọi người AWS Study Group VN! Trong quá trình tìm hiểu về Containers trên AWS, mình phát hiện ra Amazon EKS chính thức hỗ trợ **Customer-routed control plane egress**. Đây là tính năng giúp route lưu lượng outbound của Kubernetes Control Plane đi qua VPC của chính mình thay vì đi qua đường truyền mặc định do EKS quản lý.
 
