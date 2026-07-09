@@ -1,7 +1,7 @@
 ---
 title: "What is AWS Continuum? New AI Technology for Smart Vulnerability Management"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---

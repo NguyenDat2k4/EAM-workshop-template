@@ -1,7 +1,7 @@
 ---
-title: "AWS Continuum - Phát hiện và xử lý lỗ hổng bảo mật thông minh bằng AI"
+title: "AWS Continuum là gì? Công nghệ AI mới giúp phát hiện và xử lý lỗ hổng bảo mật thông minh"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
